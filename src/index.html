@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page relative">
+			<section class="hero bg-[url('img/hero.gif')] bg-center bg-cover relative flex flex-col gap-16 !pt-28 !pb-20 md:mt-[-64px] md:!pt-60 min-[992px]:pb-[196px]">
+				<div class="hero__container min-[992px]:!max-w-full">
+                    <div class="absolute inset-0 bg-[#111111D9]"></div>
+                     <div class="service flex flex-col gap-4 relative pb-16 min-[992px]:gap-8 min-[992px]:pb-32">
+                        <h1 class="service__title font-black text-[32px] text-white text-center !leading-[115%] md:text-[40px] min-[992px]:text-[80px]">Best Sub-Zero &amp; Viking Service</h1> 
+                        <div class="service__guarantee flex gap-2 items-center justify-center">
+                            <img src="@img/premium.png" alt="Premium Guarantee" class="service__guarantee-icon h-11">
+                            <p class="service__guarantee-text text-lg !leading-[110%] md:text-xl max-w-72 min-[471px]:max-w-full min-[992px]:text-[40px]">
+                                Certified repair of luxury kitchen appliances
+                            </p>
+                        </div>
+                        <div class="service__brands flex gap-2 items-center justify-center min-[992px]:gap-6">
+                            <img src="@img/subzero_logo.png" alt="Sub-Zero" class="service__brand h-[22px] md:h-7 min-[992px]:h-12">
+                            <img src="@img/wolf_logo.png" alt="Wolf" class="service__brand h-[20px] md:h-7 min-[992px]:h-12">
+                            <img src="@img/viking_logo.png" alt="Viking" class="service__brand h-[22px] md:h-7 min-[992px]:h-12">
+                        </div>
+                    </div>
+				    <div class="service-card flex flex-col gap-12 md:max-w-lg md:w-full md:m-auto min-[992px]:max-w-full min-[992px]:gap-16">
+                        <div class="service-card__info flex flex-col gap-3 min-[992px]:order-2">
+                            <div class="service-card__availability backdrop-blur-[5px] bg-[#FFFFFF1A] rounded-lg min-h-16 min-[992px]:hidden">
+                                <div class="service-card__availability-icon justify-center flex gap-4 px-4 py-3 items-center">
+                                    <img src="@img/worker-icon.svg" alt="Technician" class="h-8">
+                                    <p class="service-cardavailability-info__text text-sm text-white !leading-[140%] md:text-base">
+                                        Live availability:<br>
+                                        <img id="loader" width="20px" height="20px" class="m-auto" src="@img/circle-loader.gif">
+                                        <span id="content" class="service-cardavailability__info__count hidden">3 Technicians</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-card__features flex gap-3 min-[992px]:max-w-[1048px] min-[992px]:m-auto min-[992px]:w-full">
+                                <div class="service-card__feature backdrop-blur-[5px] bg-[#FFFFFF1A] rounded-lg justify-center flex flex-col gap-1 px-4 py-3 w-full min-[992px]:p-6">
+                                    <img src="@img/clock-icon.svg" alt="Arrival" class="service-card__feature-icon h-6 min-[992px]:h-12">
+                                    <p class="service-card__feature-text text-xs text-white text-center !leading-[142%] md:text-sm min-[992px]:text-2xl">Arrival<br class="min-[992px]:hidden">from 30 min</p>
+                                </div>
+                                <div class="service-card__availability-icon backdrop-blur-[5px] bg-[#FFFFFF1A] rounded-lg justify-center gap-4 p-6 items-center hidden min-[992px]:flex min-[992px]:flex-col w-full">
+                                    <img src="@img/worker-icon.svg" alt="Technician" class="h-8 min-[992px]:h-12">
+                                    <p class="service-cardavailability-info__text text-white !leading-[140%] md:text-base min-[992px]:text-2xl">
+                                        Live availability:<br>
+                                        <img id="loader" width="33px" height="33px" class="m-auto" src="@img/circle-loader.gif">
+                                        <span id="content" class="service-cardavailability__info__count hidden text-center">3 Technicians</span>
+                                    </p>
+                                </div>
+                                <div data-goto=".inspection-pricing" class="service-card__feature backdrop-blur-[5px] bg-[#FFFFFF1A] rounded-lg justify-center flex flex-col gap-1 px-4 py-3 w-full min-[992px]:p-6">
+                                    <img src="@img/tools-icon.svg" alt="Inspection" class="service-card__feature-icon h-6 min-[992px]:h-12">
+                                    <p class="service-card__feature-text text-xs text-white text-center !leading-[142%] md:text-sm min-[992px]:text-2xl">Free<br class="min-[992px]:hidden">Inspection*</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="tel:9199444446" class="service-card__call text-white relative bgred rounded-lg flex gap-2 justify-center items-center px-4 py-3 text-lg min-[992px]:order-1 min-[992px]:max-w-[381px] min-[992px]:h-20 min-[992px]:text-[28px] min-[992px]:m-auto w-full">
+                            <img src="@img/header/phone.svg" alt="Phone" class="service-card__call-icon min-[992px]:hidden">
+                            Call Us: 919-944-4446
+                        </a>
+                    </div>
+                </div>
+            </section>
+			<section class="benefits bgred">
+                <div class="benefits__container flex flex-col gap-4 !py-6 md:flex-row min-[992px]:!py-8">
+                    <div class="benefits__item flex px-4 py-3 gap-4 bg-white rounded-lg items-center md:w-full min-[992px]:p-6">
+                        <img src="@img/repair.svg" class="min-[992px]:h-12">
+                        <div class="benefits__text font-semibold !leading-[120%] pr-12 md:pr-0 min-[992px]:text-[28px]">
+                            OEM Parts in Stock + Warranty
+                        </div>
+                    </div>
+                    <div class="benefits__item flex px-4 py-3 gap-4 bg-white rounded-lg items-center md:w-full min-[992px]:p-6">
+                        <img src="@img/over.svg" class="min-[992px]:h-12">
+                        <div class="benefits__text font-semibold !leading-[120%] pr-20 md:pr-0 min-[992px]:text-[28px]">
+                            Over 11 years of experience
+                        </div>
+                    </div>
+                    <div class="benefits__item flex px-4 py-3 gap-4 bg-white rounded-lg items-center md:w-full min-[992px]:p-6">
+                        <img src="@img/location.svg" class="min-[992px]:h-12">
+                        <div class="benefits__text font-semibold !leading-[120%] pr-20 md:pr-0 min-[992px]:text-[28px]">
+                            Triangle Area Coverage
+                        </div>
+                    </div>
+                </div>
+            </section>
+			<section class="services !pt-16 md:!pb-16 min-[992px]:!py-24">
+                <div class="services__container relative">
+                    <h2 class="services__title text-2xl font-semibold mb-2 !leading-[100%] md:text-center md:text-3xl min-[992px]:font-bold min-[992px]:text-[40px] min-[992px]:mb-6">Our Services</h2>
+                    <p class="services__subtitle text-sm !leading-[140%] mb-5 md:text-center md:hidden min-[992px]:text-xl">Luxury Appliance Repair You Can Trust.</p>
+                    <p class="services__description text-sm !leading-[140%] md:max-w-2xl md:text-center md:m-auto md:text-base min-[992px]:text-xl">
+                        <span class="max-md:hidden">Luxury Appliance Repair You Can Trust.</span> We don’t service every brand — we specialize only in premium kitchen appliances: Sub-Zero, Viking, and Wolf. That’s why we know them better than anyone.
+                    </p>
+                    <div class="services__block services__block--premium pt-6 md:pt-9 min-[992px]:pt-16">                   
+                        <h3 class="services__heading text-lg colored font-semibold pr-28 !leading-[120%] md:text-2xl min-[992px]:text-[32px]">We repair only premium brands:</h3>
+                        <div class="services__lists pt-4 md:flex md:gap-4 min-[992px]:pt-6 min-[992px]:gap-8">
+                            <ul class="services__list flex flex-col gap-2 pb-2 md:pb-0 md:w-full md:gap-4 min-[992px]:gap-6">
+                                <li class="services__item flex gap-2">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/Refrigerators.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Refrigerators</div>
+                                        <div class="services__details text-[#777777] !leading-[140%]">freon leaks, compressors, sensors, control boards, door seals</div>
+                                    </div>
+                                </li>
+                                <li class="services__item flex gap-2 items-center">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/Freezers.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Freezers</div>
+                                    </div>
+                                </li>
+						        <li class="services__item flex gap-2 items-center">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/WineCoolers.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Wine Coolers</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="services__list flex flex-col gap-2 md:w-full md:gap-4 min-[992px]:gap-6">
+						        <li class="services__item flex gap-2">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/IceMakers.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Ice Makers</div>
+								        <div class="services__details text-[#777777] !leading-[140%]">built-in premium models</div>
+                                    </div>
+                                </li>
+						        <li class="services__item flex gap-2">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/OutdoorAppliances.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Outdoor Appliances</div>
+								        <div class="services__details text-[#777777] !leading-[140%]">outdoor refrigerators, BBQ fridges, ice makers</div>
+                                    </div>
+                                </li>
+						        <li class="services__item flex gap-2">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/WallOvens.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Wall Ovens</div>
+								        <div class="services__details text-[#777777] !leading-[140%]">heating elements, convection systems, sensors, control panels</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="services__list flex flex-col gap-2 md:w-full md:gap-4 min-[992px]:gap-6">
+						        <li class="services__item flex gap-2">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/Microwaves.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Microwaves</div>
+								        <div class="services__details text-[#777777] !leading-[140%]">we do not service other brands</div>
+                                    </div>
+                                </li>
+						        <li class="services__item flex gap-2">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/CooktopsRangetops.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Cooktops & Rangetops</div>
+								        <div class="services__details text-[#777777] !leading-[140%]">gas, electric, induction</div>
+                                    </div>
+                                </li>
+						        <li class="services__item flex gap-2 items-center">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/Ranges.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Ranges</div>
+                                    </div>
+                                </li>
+						        <li class="services__item flex gap-2 items-center">
+                                    <img class="h-6 min-[992px]:h-10" src="@img/RangeHoods.svg">
+                                    <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                        <div class="services__name !leading-[140%]">Range Hoods</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="services__block services__block--restricted pt-6 md:pt-9 min-[992px]:max-w-[660px] min-[992px]:pt-16 min-[1100px]:max-w-[790px]">
+                        <h3 class="services__heading text-lg colored font-semibold !leading-[120%] md:text-2xl min-[992px]:text-[32px]">What we do not service:</h3>
+                        <ul class="services__list flex flex-col gap-2 pt-4 md:flex-row md:gap-4 min-[992px]:pt-6 min-[992px]:gap-8">
+                            <li class="services__item flex gap-2 items-center md:w-[186px] min-[992px]:w-full">
+                                <img class="h-6 min-[992px]:h-10" src="@img/Dishwashers.svg">
+                                <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                    <div class="services__name !leading-[140%]">Dishwashers</div>
+                                </div>
+                            </li>
+						    <li class="services__item flex gap-2 items-center min-[992px]:w-full">
+                                <img class="h-6 min-[992px]:h-10" src="@img/Washersdryers.svg">
+                                <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                    <div class="services__name !leading-[140%]">Washers & dryers</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="services__list flex flex-col gap-2 pt-4 md:flex-row md:gap-4 min-[992px]:pt-6 min-[992px]:gap-8">
+						    <li class="services__item flex gap-2 min-[992px]:w-full">
+                                <img class="h-6 min-[992px]:h-10" src="@img/Smallappliances.svg">
+                                <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                    <div class="services__name !leading-[140%]">Small appliances</div>
+								    <div class="services__details text-[#777777] !leading-[140%]">kettles, toasters, etc.</div>
+                                </div>
+                            </li>
+						    <li class="services__item flex gap-2 min-[992px]:w-full">
+                                <img class="h-6 min-[992px]:h-10" src="@img/Budgetbrands.svg">
+                                <div class="services__content text-sm md:text-base min-[992px]:text-xl">
+                                    <div class="services__name !leading-[140%]">Budget brands</div>
+								    <div class="services__details text-[#777777] !leading-[140%] md:w-[186px] min-[992px]:w-full">Samsung, LG, Whirlpool, GE, Frigidaire, etc.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="services__note text-sm text-[#777777] !leading-[140%] pt-6 md:max-w-[300px] md:text-base min-[850px]:max-w-[370px] min-[950px]:max-w-[475px] min-[992px]:text-xl min-[992px]:max-w-[425px] min-[992px]:pt-16 min-[1170px]:max-w-[626px] min-[1340px]:max-w-[766px]">
+                        While we do not service budget refrigerators, we can still repair ranges, stoves, cooktops, and ovens from most brands — including Samsung, LG, GE, and others.
+                    </p>
+                    <img src="@img/bg-image1.png" class="mb-[-11%] md:absolute md:right-4 md:bottom-0 md:h-[350px] md:mb-[-120px] min-[992px]:h-[441px] min-[992px]:mb-[-167px]">
+                </div>
+            </section>
+			<section class="location-selector bg-[#E9E9E9] py-16 min-[992px]:py-24">
+                <div class="location-selector__container">
+                    <h2 class="location-selector__title text-2xl font-semibold !leading-[100%] md:text-center md:text-3xl min-[992px]:text-[40px] min-[992px]:font-bold">Service Areas</h2>
+                    <p class="location-selector__description text-sm pt-2 max-w-xl md:text-base md:text-center md:m-auto min-[992px]:text-xl min-[992px]:pt-6">
+                        We proudly serve Raleigh and the entire Triangle Area with fast, reliable repair service.
+                    </p>
+                    <div class="location-selector__form pt-6 flex flex-col gap-6 md:flex-row min-[992px]:gap-8 min-[992px]:pt-16">
+                        <div class="location-selector__info md:w-1/2">
+					        <div class="location-selector__lists flex gap-4 min-[992px]:gap-8">
+                                <div class="location-selector__list w-full text-[#181818] text-sm !leading-[140%] flex flex-col gap-4 md:text-base min-[992px]:text-xl">
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="cary">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Cary, NC</span>
+                                    </label>
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="morrisville" checked>
+                                        <span class="location-selector__name location-selector__name--active peer-checked:text-[#EA4A35] transition-colors">Morrisville, NC</span>
+                                    </label>
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="apex">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Apex, NC</span>
+                                    </label>
+							        <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="hayesbarton">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Hayes Barton</span>
+                                    </label>
+							        <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="northhills">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">North Hills (Midtown)</span>
+                                    </label>
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="budleigh">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Budleigh</span>
+                                    </label>
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="historicoakwood">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Historic Oakwood</span>
+                                    </label>
+							        <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="cameronvillage">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Cameron Village</span>
+                                    </label>
+                                </div>
+					            <div class="location-selector__list w-full text-[#181818] text-sm !leading-[140%] flex flex-col gap-4 md:text-base min-[992px]:text-xl">
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35]" type="radio" name="city" value="durham">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Durham, NC</span>
+                                    </label>
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="chapelhill">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Chapel Hill, NC</span>
+                                    </label>
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="wakeforest">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Wake Forest, NC</span>
+                                    </label>
+							        <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="briercreek">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Brier Creek</span>
+                                    </label>
+							        <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="countryclubhills">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Country Club Hills</span>
+                                    </label>
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="glenwood">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Glenwood</span>
+                                    </label>
+                                    <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="cameronpark">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Cameron Park / Forest Park</span>
+                                    </label>
+							        <label class="location-selector__item flex gap-[5px] items-center">
+                                        <input class="location-selector__radio w-[13px] h-[13px] peer accent-[#EA4A35] min-[992px]:w-4 min-[992px]:h-4" type="radio" name="city" value="boylanheights">
+                                        <span class="location-selector__name peer-checked:text-[#EA4A35] transition-colors">Boylan Heights</span>
+                                    </label>
+                                </div>
+					        </div>
+                            <div class="location-selector__footer text-center max-md:hidden md:pt-8 md:max-w-[328px] md:text-left min-[992px]:pt-16">
+                                <p class="location-selector__note text-base !leading-[125%] pb-2 min-[992px]:text-xl min-[992px]:pb-6">Check availability in your area</p>
+                                <button data-goto=".contact-us" class="location-selector__button bgred font-semibold text-[#F5F7FF] rounded-lg py-3 px-4 w-full !leading-[100%] min-[992px]:text-2xl min-[992px]:py-4 min-[992px]:px-12" type="submit">Book appointment</button>
+                            </div>
+                        </div>
+                        <div class="location-selector__map md:w-1/2">
+                            <a class="w-full block" href="https://www.openstreetmap.org/search?query=Morrisville%2C%20NC" target="_blank">
+                                <img id="location-map" class="rounded-lg w-full" src="@img/location-maps/Morrisville.png" alt="Morrisville, NC">
+                            </a>
+                        </div>
+                        <div class="location-selector__footer text-center md:hidden">
+                            <p class="location-selector__note text-sm !leading-[125%] pb-2">Check availability in your area</p>
+                            <button data-goto=".contact-us" class="location-selector__button bgred font-semibold text-[#F5F7FF] rounded-lg py-3 px-4 w-full !leading-[100%]" type="submit">Book appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="why-choose bgred py-16 min-[992px]:py-[72px]">
+                <div class="why-choose__container">
+                    <div class="why-choose__content flex flex-col gap-4 md:flex-row min-[992px]:gap-8">
+                        <div class="why-choose__info md:w-1/3">
+                            <h2 class="why-choose__title text-2xl font-semibold mb-2 text-white text-nowrap min-[992px]:font-bold min-[992px]:text-[40px] min-[992px]:mb-6">Why Choose Us</h2>
+                            <p class="why-choose__subtitle text-sm !leading-[140%] mb-5 text-white min-[992px]:text-xl">Our focus is quality over quantity.<br> Every repair is done right the first time.</p>
+                        </div>
+                        <div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg md:w-1/3 min-[992px]:p-6 min-[992px]:pb-[66px]">
+                            <img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="@img/over.svg">
+                            <div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
+                                Experience you can trust
+                            </div>
+                            <div class="why-choose__text text-sm !leading-[140%] min-[992px]:text-xl">
+                                Over 11 years of experience working with luxury appliances.
+                            </div>
+                        </div>
+                        <div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg md:w-1/3 min-[992px]:p-6 min-[992px]:pb-[66px]">
+                            <img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="@img/repair.svg">
+                            <div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
+                                OEM parts only
+                            </div>
+                            <div class="why-choose__text text-sm !leading-[140%] min-[992px]:text-xl">
+                                Original Sub-Zero, Viking,<br> and Wolf components.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-choose__items flex flex-col gap-4 pt-4 md:flex-row min-[992px]:pt-8 min-[992px]:gap-8">
+                        <div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg w-full min-[992px]:p-6">
+                            <img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="@img/warranty.svg">
+                            <div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
+                                Warranty on all work
+                            </div>
+                            <div class="why-choose__text text-sm !leading-[140%] min-[992px]:text-xl">
+                                Warranty on labor & parts<br> (90 days – 6 months).
+                            </div>
+                        </div>
+                        <div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg w-full min-[992px]:p-6 min-[992px]:pb-[38px]">
+                            <img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="@img/response.svg">
+                            <div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
+                                Fast response
+                            </div>
+                            <div class="why-choose__text text-sm !leading-[140%] min-[992px]:text-xl">
+                                Same-Day / Next-Day Service available.
+                            </div>
+                        </div>
+                        <div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg w-full min-[992px]:p-6">
+                            <img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="@img/professionalservice.svg">
+                            <div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
+                                Professional service
+                            </div>
+                            <div class="why-choose__text text-sm !leading-[140%] min-[992px]:text-xl">
+                                We treat your home with respect and leave it spotless.We focus on quality and reliability, not just the number of calls.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="parts pt-16 md:pb-16 min-[992px]:pt-24 min-[992px]:pb-40 min-[1050px]:pb-24">
+                <div class="parts__container relative !max-w-[1167px]">
+                    <div class="parts__header pb-6 min-[992px]:pb-16">
+                        <h2 class="parts__title text-2xl font-semibold !leading-[100%] md:text-center md:text-3xl min-[992px]:text-[40px] min-[992px]:font-bold">Parts & Equipment</h2>
+                        <p class="parts__description text-sm pt-2 !leading-[140%] md:max-w-[688px] md:m-auto md:text-center md:text-base min-[992px]:text-xl min-[992px]:pt-6">
+                            We use only <span class="colored">original OEM parts from Sub-Zero, Viking, and Wolf.</span> All parts are sourced directly from the manufacturer.
+                        </p>
+                    </div>
+                    <div class="parts__group pb-6 md:flex md:justify-center md:gap-8">
+                        <div class="parts__info pb-8 min-[992px]:w-[400px]">
+                            <p class="parts-info__text text-lg font-semibold !leading-[120%] colored pb-2 md:text-xl min-[992px]:text-[32px] min-[992px]:pb-6 min-[992px]:text-nowrap">
+                                For precise diagnostics,<br> we are equipped with:
+                            </p>
+                            <ul class="parts-info__list text-sm !leading-[140%] text-[#181818] pl-5 flex flex-col gap-2 md:text-base min-[992px]:text-xl min-[992px]:gap-6">
+                                <li class="service-info__item list-disc marker:text-lg marker:text-[#EA4A35] !leading-[100%] h-4">Eléctronic leak detectors</li>
+                                <li class="service-info__item list-disc marker:text-lg marker:text-[#EA4A35] !leading-[100%] h-4">Vacuum pumps &amp; gauges</li>
+                                <li class="service-info__item list-disc marker:text-lg marker:text-[#EA4A35] !leading-[100%] h-4">Genuine Sub-Zero &amp; Wolf service tools</li>
+                            </ul>
+                        </div>
+                        <div class="parts__img">
+                            <img class="rounded-lg md:h-auto md:max-w-[600px] md:w-full min-[992px]:max-w-[687px] min-[992px]:w-full" src="@img/partsequipment.png">
+                        </div>
+                    </div>
+                    <img src="@img/bg-image2.png" class="m-auto md:absolute md:bottom-[-64px] md:left-6 md:h-44 min-[992px]:bottom-[-160px] min-[1050px]:bottom-[-96px] min-[992px]:w-[358px] min-[992px]:h-[278px] min-[992px]:object-cover min-[992px]:object-top">
+                </div>
+            </section>
+            <section class="how-it-works bg-[#E9E9E9] py-16  min-[992px]:py-24">
+                <div class="how-it-works__container flex flex-col gap-6">
+                    <div class="how-it-works__header min-[992px]:pb-16">
+                        <h2 class="how-it-works__title text-2xl font-semibold md:text-3xl md:text-center min-[992px]:text-[40px]">How It Works</h2>
+                        <p class="how-it-works__description text-sm md:text-base md:text-center pt-2 md:pt-4 min-[992px]:text-xl">
+                            Quick, transparent, and hassle-free repair process.
+                        </p>
+                    </div>
+                    <div class="paragraphs flex items-start">
+                        <div class="how-it-works__points flex flex-col gap-20 min-[545px]:gap-[61px] self-start pt-1 relative md:hidden">
+                            <div class="how-it-works__point rounded-full w-[9px] h-[9px] bgred"></div>
+                            <div class="how-it-works__point rounded-full w-[9px] h-[9px] bgred"></div>
+                            <div class="how-it-works__point rounded-full w-[9px] h-[9px] bgred"></div>
+                        </div>
+                        <div class="how-it-works__steps flex flex-col gap-6 pl-5 md:flex-row md:pl-0" data-anim>
+                            <div data-aos="fade-up" class="how-it-works__step how-it-works__step--1 flex gap-4 max-w-80 min-[545px]:max-w-full md:w-full md:text-center md:!relative">
+                                <div class="how-it-works-step__content">
+                                    <p class="how-it-works__step-title text-lg colored font-semibold !leading-[100%] pb-2 md:text-xl md:pb-6 min-[992px]:text-[32px] min-[992px]:pb-8">01 Call or book online</p>
+                                    <p class="how-it-works__step-desc text-sm text-[#1F1D1D] md:text-base min-[992px]:text-xl">Call or book online. Easy booking by phone or web form.</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="100" class="how-it-works__step how-it-works__step--2 flex gap-4 max-w-80 min-[545px]:max-w-full md:w-full md:text-center md:!relative">
+                                <div class="how-it-works-step__content">
+                                    <p class="how-it-works__step-title text-lg colored font-semibold !leading-[100%] pb-2 md:text-xl md:pb-6 min-[992px]:text-[32px] min-[992px]:pb-8">02 Technician arrives</p>
+                                    <p class="how-it-works__step-desc text-sm text-[#1F1D1D] md:text-base min-[992px]:text-xl">Technician arrives same/next day. On-time arrival with diagnostic tools.</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="200" class="how-it-works__step how-it-works__step--3 flex gap-4 max-w-80 min-[545px]:max-w-full md:w-full md:text-center md:!relative">
+                                <div class="how-it-works-step__content">
+                                    <p class="how-it-works__step-title text-lg colored font-semibold !leading-[100%] pb-2 md:text-xl md:pb-6 min-[992px]:text-[32px] min-[992px]:pb-8">03 Repair + Warranty</p>
+                                    <p class="how-it-works__step-desc text-sm text-[#1F1D1D] md:text-base min-[992px]:text-xl">Repair with OEM parts + warranty. Guaranteed results, backed by 90-180 days warranty.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="inspection-pricing py-16 min-[992px]:py-24">
+                <div class="inspection-pricing__container !max-w-[1210px]">
+                    <div class="inspection-pricing__header">
+                        <h2 class="inspection-pricing-header__title text-2xl font-semibold !leading-[100%] md:text-3xl md:text-center min-[992px]:text-[40px] min-[992px]:font-bold">Inspection & Pricing</h2>
+                        <p class="inspection-pricing-header__description text-sm pt-2 pb-6 md:text-base md:text-center min-[992px]:text-xl min-[992px]:pt-6 min-[992px]:pb-16">
+                            Clear and transparent service from the first visit.
+                        </p>
+                    </div>
+                        <div class="inspection-pricing__content flex flex-col gap-6 min-[992px]:flex-row min-[992px]:gap-8">
+                            <div class="inspection-pricing__img min-[992px]:order-2">
+                                <img class="rounded-lg" src="@img/inspection.png">
+                            </div>
+                            <div class="inspection-pricing-info min-[992px]:order-1 min-[992px]:max-w-[400px]">
+                                <h3 class=" inspection-pricing-info__title colored text-lg font-semibold !leading-[100%] pb-2 md:text-2xl min-[992px]:text-[32px] min-[992px]:pb-6"><span class="md:hidden">Inspection & Pricing</span><span class="hidden md:block">For precise diagnostics, we are equipped with:</span></h3>
+                                <p class="inspection-pricing-info__description text-sm !leading-[140%] pb-5 md:text-base min-[992px]:text-xl">
+                                    Your technician will fully inspect your appliance and provide a quote for the recommended repair. If you wish to move forward with the repair, we will deduct the <span class="colored">inspection fee $95</span> from the total price of the repair.
+                                </p>
+                                <span class="inspection-pricing-info__text colored text-sm !leading-[140%] md:text-base min-[992px]:text-xl">You can also decline the repair and simply pay $95 for the inspection.</span>
+                                <button data-goto=".contact-us" class="inspection-pricing__button bgred mt-6 w-full rounded-lg text-[#F5F7FF] font-semibold py-3 px-4 !leading-[100%] md:text-xl min-[992px]:text-2xl min-[992px]:py-4 min-[992px]:px-12 min-[992px]:text-nowrap">Book an Inspection Today</button>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section class="testimonials py-16 min-[992px]:py-24">
+                <div class="testimonials__container flex flex-col gap-6 min-[992px]:gap-16">
+                    <div class="testimonials__header">
+                        <h2 class="testimonials__title text-2xl font-semibold !leading-[100%] md:text-3xl md:text-center min-[992px]:text-[40px] min-[992px]:font-bold">Testimonials</h2>
+                        <p class="testimonials__description text-sm pt-2 md:text-base md:text-center min-[992px]:text-xl min-[992px]:pt-6">
+                            See why homeowners in Raleigh choose us for premium appliance repair.
+                        </p>
+                    </div>
+                    <div class="testimonials-reviews">
+                        <h2 class="testimonials-reviews__title text-lg font-semibold colored pb-2 !leading-[100%] min-[992px]:hidden">What our clients say</h2>
+                        <!-- Оболонка слайдера -->
+                        <div class="testimonials-reviews__slider swiper">
+                            <!-- Частина слайдера, що рухається -->
+                            <div class="testimonials-reviews__wrapper swiper-wrapper">
+                                <!-- Слайд -->
+                                <div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
+                                    <div class="testimonials-reviews__starblock flex justify-between">
+                                        <img class="min-[992px]:h-6" src="@img/reviewstars.svg">
+                                        <img class="min-[992px]:h-[28px]" src="@img/google.svg">
+                                    </div>
+                                    <div class="testimonials-reviews__info overflow-auto pr-[10px]">
+                                        <div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">Ann Richards</div>
+                                        <div class="testimonials-reviews-info__description !leading-[140%] min-[992px]:text-xl">I had excellent experience with Best Sub Zero & Viking Repair Service. I was able to get a quick appointment, they came on time, and gave me good advice, explaining the problem I had so I was able to make an informed opinion on how to best proceed. Ben is an expert. And he is very knowledgeable, professional, and personable. Recommend!</div>
+                                    </div>
+                                </div>
+                                <div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
+                                    <div class="testimonials-reviews__starblock flex justify-between">
+                                        <img class="min-[992px]:h-6" src="@img/reviewstars.svg">
+                                        <img class="min-[992px]:h-[28px]" src="@img/google.svg">
+                                    </div>
+                                    <div class="testimonials-reviews__info overflow-auto pr-[10px]">
+                                        <div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">Sharon Silver</div>
+                                        <div class="testimonials-reviews-info__description !leading-[140%] min-[992px]:text-xl">Sub Zero Viking was available immediately to fix my Viking stove. The technician was very professional. He arrived early and was able to resolve my problem.  I would highly recommend them!</div>
+                                    </div>
+                                </div>
+                                <div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
+                                    <div class="testimonials-reviews__starblock flex justify-between">
+                                        <img class="min-[992px]:h-6" src="@img/reviewstars.svg">
+                                        <img class="min-[992px]:h-[28px]" src="@img/google.svg">
+                                    </div>
+                                    <div class="testimonials-reviews__info overflow-auto pr-[10px]">
+                                        <div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">T Moore</div>
+                                        <div class="testimonials-reviews-info__description !leading-[140%] min-[992px]:text-xl">High recommended Ben. We had a faulty compressor on our SubZero unit and it was running very hot. Ben gave us instructions on how to control the heat by phone and arrived the next day, fully explained the issue, resolution, and cost.  Repaired the unit perfectly and at a very reasonable cost.</div>
+                                    </div>
+                                </div>
+                                <div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
+                                    <div class="testimonials-reviews__starblock flex justify-between">
+                                        <img class="min-[992px]:h-6" src="@img/reviewstars.svg">
+                                        <img class="min-[992px]:h-[28px]" src="@img/google.svg">
+                                    </div>
+                                    <div class="testimonials-reviews__info overflow-auto pr-[10px]">
+                                        <div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">Sunni W (Sunnylit)</div>
+                                        <div class="testimonials-reviews-info__description !leading-[140%] min-[992px]:text-xl">I have a niche stove that most people are unfamiliar with, and Ben repaired it with true expertise. He quickly diagnosed the issue, went extra miles to find a fitting part, and got everything working perfectly. Professional, knowledgeable, and efficient. Highly recommended for any specialized appliance repairs!</div>
+                                    </div>
+                                </div>
+                                <div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
+                                    <div class="testimonials-reviews__starblock flex justify-between">
+                                        <img class="min-[992px]:h-6" src="@img/reviewstars.svg">
+                                        <img class="min-[992px]:h-[28px]" src="@img/google.svg">
+                                    </div>
+                                    <div class="testimonials-reviews__info overflow-auto pr-[10px]">
+                                        <div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">Cheryl King</div>
+                                        <div class="testimonials-reviews-info__description !leading-[140%] min-[992px]:text-xl">Ben is prompt and punctual in returning phone calls and repair visits. He has successfully repaired 2 different sub zero refrigerators in 2 different locations. He is honest, knowledgeable and skilled in his trade. It is a relief to know that tradesmen like him continue to exist.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Якщо потрібна пагінація -->
+                            <div class="swiper-pagination flex gap-4 justify-center pt-6 min-[992px]:pt-8"></div>
+                        </div>
+                        <a href="https://www.google.com/maps/place/Best+Sub+Zero+%26+Viking+Repair+Service/@40.573531,-74.131044,800m/data=!3m1!1e3!4m8!3m7!1s0x89c24b1bd2f67db1:0xcceecafa186d5e30!8m2!3d40.573531!4d-74.1284691!9m1!1b1!16s%2Fg%2F11n011z89j?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" class="colored mt-9 flex gap-2 justify-center w-full border-solid border-[2px] border-[#EA4A35] rounded-lg py-3 px-4 min-[992px]:text-2xl min-[992px]:py-4 min-[992px]:px-12 min-[992px]:max-w-[357px] min-[992px]:mx-auto min-[992px]:mt-16"><img src="@img/google-map.svg">More testimonials</a>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio bg-[#E9E9E9] py-16 min-[992px]:py-24">
+                <div class="portfolio__container">
+                <h2 class="portfolio__title text-2xl font-semibold md:text-3xl md:text-center min-[992px]:text-[40px] min-[992px]:font-bold">Our portfolio</h2>
+                    <p class="portfolio__description text-sm pt-2 md:text-base md:text-center min-[992px]:text-xl min-[992px]:pt-6 min-[992px]:max-w-[600px] min-[992px]:m-auto">
+                        Real examples of how we fix Sub-Zero, Viking, and Wolf appliances in Raleigh.
+                    </p>
+                    <div class="portfolio__slider swiper pt-6 min-[992px]:pt-16">
+                        <div class="portfolio__wrapper swiper-wrapper">
+                            <div class="portfolio__slide swiper-slide p-4 bg-[#FDFDFD] rounded-lg flex flex-col gap-4 min-[992px]:p-6">
+                                <!-- Оболонка слайдера -->
+                                <div class="portfolio-img__slider swiper relative">
+                                    <!-- Частина слайдера, що рухається -->
+                                    <div class="portfolio-img__wrapper swiper-wrapper">
+                                        <!-- Слайд -->
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Якщо потрібна пагінація -->
+                                    <div class="swiper-pagination absolute bottom-2 flex gap-2 left-1/2 -translate-x-1/2"></div>
+                                </div>
+                                <div class="portfolio-slide-info">
+                                    <h2 class="portfolio-slide-info__title font-semibold text-lg !leading-[120%] md:text-xl min-[992px]:text-2xl">Viking Refrigerator</h2>
+                                    <p class="portfolio-slide-info__description text-sm !leading-[120%] text-[#777777] md:text-base min-[992px]:text-xl">All computer boards replacement after power surge</p>
+                                </div>
+                                <p class="portfolio-slide__text text-sm !leading-[140%] md:text-base min-[992px]:text-xl">Replaced all damaged computer boards after a power surge, reprogrammed the controls, and tested the cooling and defrost systems to factory standards.</p>
+                            </div>
+                            <div class="portfolio__slide swiper-slide p-4 bg-[#FDFDFD] rounded-lg flex flex-col gap-4 min-[992px]:p-6">
+                                <!-- Оболонка слайдера -->
+                                <div class="portfolio-img__slider swiper relative">
+                                    <!-- Частина слайдера, що рухається -->
+                                    <div class="portfolio-img__wrapper swiper-wrapper">
+                                        <!-- Слайд -->
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/Sub-ZeroFreezer.png" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Якщо потрібна пагінація -->
+                                    <div class="swiper-pagination absolute bottom-2 flex gap-2 left-1/2 -translate-x-1/2"></div>
+                                </div>
+                                <div class="portfolio-slide-info">
+                                    <h2 class="portfolio-slide-info__title font-semibold text-lg !leading-[120%] md:text-xl min-[992px]:text-2xl">Viking refrigerator</h2>
+                                    <p class="portfolio-slide-info__description text-sm !leading-[120%] text-[#777777] md:text-base min-[992px]:text-xl">Repair</p>
+                                </div>
+                                <p class="portfolio-slide__text text-sm !leading-[140%] md:text-base min-[992px]:text-xl">Replaced faulty cooling components, installed OEM parts, and recalibrated the system to restore full cooling performance.</p>
+                            </div>
+                            <div class="portfolio__slide swiper-slide p-4 bg-[#FDFDFD] rounded-lg flex flex-col gap-4 min-[992px]:p-6">
+                                <!-- Оболонка слайдера -->
+                                <div class="portfolio-img__slider swiper relative">
+                                    <!-- Частина слайдера, що рухається -->
+                                    <div class="portfolio-img__wrapper swiper-wrapper">
+                                        <!-- Слайд -->
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/VikingRefrigerator.png" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Якщо потрібна пагінація -->
+                                    <div class="swiper-pagination absolute bottom-2 flex gap-2 left-1/2 -translate-x-1/2"></div>
+                                </div>
+                                <div class="portfolio-slide-info">
+                                    <h2 class="portfolio-slide-info__title font-semibold text-lg !leading-[120%] md:text-xl min-[992px]:text-2xl">Sub-Zero Freezer</h2>
+                                    <p class="portfolio-slide-info__description text-sm !leading-[120%] text-[#777777] md:text-base min-[992px]:text-xl">Compressor replacement</p>
+                                </div>
+                                <p class="portfolio-slide__text text-sm !leading-[140%] md:text-base min-[992px]:text-xl">Removed the damaged compressor, installed a new OEM compressor, refilled refrigerant, and pressure-tested the sealed system.</p>
+                            </div>
+                            <div class="portfolio__slide swiper-slide p-4 bg-[#FDFDFD] rounded-lg flex flex-col gap-4 min-[992px]:p-6">
+                                <!-- Оболонка слайдера -->
+                                <div class="portfolio-img__slider swiper relative">
+                                    <!-- Частина слайдера, що рухається -->
+                                    <div class="portfolio-img__wrapper swiper-wrapper">
+                                        <!-- Слайд -->
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Якщо потрібна пагінація -->
+                                    <div class="swiper-pagination absolute bottom-2 flex gap-2 left-1/2 -translate-x-1/2"></div>
+                                </div>
+                                <div class="portfolio-slide-info">
+                                    <h2 class="portfolio-slide-info__title font-semibold text-lg !leading-[120%] md:text-xl min-[992px]:text-2xl">Wolf stove</h2>
+                                    <p class="portfolio-slide-info__description text-sm !leading-[120%] text-[#777777] md:text-base min-[992px]:text-xl">Ignition System Repair</p>
+                                </div>
+                                <p class="portfolio-slide__text text-sm !leading-[140%] md:text-base min-[992px]:text-xl">Replaced the broil ignition control and the top burners ignition control board with a new wireless kit assembly, tested all burners and the broil function for stable ignition.</p>
+                            </div>
+                            <div class="portfolio__slide swiper-slide p-4 bg-[#FDFDFD] rounded-lg flex flex-col gap-4 min-[992px]:p-6">
+                                <!-- Оболонка слайдера -->
+                                <div class="portfolio-img__slider swiper relative">
+                                    <!-- Частина слайдера, що рухається -->
+                                    <div class="portfolio-img__wrapper swiper-wrapper min-[992px]:h-[533px]">
+                                        <!-- Слайд -->
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                        <div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+                                            <img class="w-full h-full object-cover object-center" src="@img/portfolio-slider/computerboards.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Якщо потрібна пагінація -->
+                                    <div class="swiper-pagination absolute bottom-2 flex gap-2 left-1/2 -translate-x-1/2"></div>
+                                </div>
+                                <div class="portfolio-slide-info">
+                                    <h2 class="portfolio-slide-info__title font-semibold text-lg !leading-[120%] md:text-xl min-[992px]:text-2xl">Viking range</h2>
+                                    <p class="portfolio-slide-info__description text-sm !leading-[120%] text-[#777777] md:text-base min-[992px]:text-xl">Replacement of 2 bake ignition controls with 2 bake burners tube</p>
+                                </div>
+                                <p class="portfolio-slide__text text-sm !leading-[140%] md:text-base min-[992px]:text-xl">Replaced both bake ignition control boards along with two bake burner tubes, tested heating cycles, and restored proper oven function.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination flex gap-4 justify-center pt-6 min-[992px]:pt-8"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq py-16 min-[992px]:py-24">
+                <div class="faq__container">
+                    <h2 class="faq__title text-2xl font-semibold !leading-[100%] md:text-3xl md:text-center min-[992px]:text-[40px]"><span class="md:hidden">FAQ</span><span class="hidden md:block">Frequently Asked Questions</span></h2>
+                    <p class="faq__description text-sm pt-2 !leading-[140%] md:text-base md:text-center md:pb-3 min-[992px]:text-xl min-[992px]:pt-6">
+                        Common questions answered for your convenience.
+                    </p>
+                    <div class="faq__lists flex flex-col gap-4 pt-4 min-[992px]:pt-[52px] min-[992px]:gap-8">
+                        <div class="faq__list flex flex-col gap-4 md:flex-row min-[992px]:gap-8">
+                            <div class="faq__item bg-[#F5F5F7] p-4 flex flex-col gap-4 rounded-lg w-full min-[992px]:p-6">
+                                <h3 class="faq-list__tilte text-lg !leading-[120%] text-[#3D3B3B] font-semibold md:text-xl min-[992px]:text-[32px]">Do you provide emergency service?</h3>
+                                <p class="faq-list__description text-sm !leading-[140%] text-[#1D1D1DB2] md:text-base min-[992px]:text-2xl">Yes, we offer same-day and urgent appointments when available.</p>
+                            </div>
+                            <div class="faq__item bg-[#F5F5F7] p-4 flex flex-col gap-4 rounded-lg w-full min-[992px]:p-6">
+                                <h3 class="faq-list__tilte text-lg !leading-[120%] text-[#3D3B3B] font-semibold md:text-xl min-[992px]:text-[32px]">Do you work weekends?</h3>
+                                <p class="faq-list__description text-sm !leading-[140%] text-[#1D1D1DB2] md:text-base min-[992px]:text-2xl">Yes, we provide service on Saturdays.</p>
+                            </div>
+                        </div>
+                        <div class="faq__list flex flex-col gap-4 md:flex-row min-[992px]:gap-8">
+                            <div class="faq__item bg-[#F5F5F7] p-4 flex flex-col gap-4 rounded-lg w-full min-[992px]:p-6">
+                                <h3 class="faq-list__tilte text-lg !leading-[120%] text-[#3D3B3B] font-semibold md:text-xl min-[992px]:text-[32px]">What areas do you cover?</h3>
+                                <p class="faq-list__description text-sm !leading-[140%] text-[#1D1D1DB2] md:text-base min-[992px]:text-2xl">We serve Raleigh, Cary, Durham, Chapel Hill, and surrounding areas.</p>
+                            </div>
+                            <div class="faq__item bg-[#F5F5F7] p-4 flex flex-col gap-4 rounded-lg w-full min-[992px]:p-6">
+                                <h3 class="faq-list__tilte text-lg !leading-[120%] text-[#3D3B3B] font-semibold md:text-xl min-[992px]:text-[32px]">Do you use OEM parts?</h3>
+                                <p class="faq-list__description text-sm !leading-[140%] text-[#1D1D1DB2] md:text-base min-[992px]:text-2xl">Always. We source directly from Sub-Zero, Viking, and Wolf.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="repair min-[992px]:py-[62px] min-[992px]:mt-24">
+                <div class="repair__container relative">
+                    <div class="repair-info rounded-lg py-6 px-4 min-[992px]:flex min-[992px]:py-0">
+                        <div class="repair-info__content min-[992px]:max-w-[500px] min-[1150px]:max-w-[650px] min-[1300px]:max-w-[800px] min-[1400px]:max-w-[900px]">
+                            <h2 class="repair-info__title text-2xl font-semibold !leading-[100%] pb-6 min-[992px]:text-[32px]">
+                                Sub-Zero & Viking Repair in Raleigh,<br class="md:hidden">
+                                Cary, Durham & Chapel Hill
+                            </h2>
+                            <p class="repair-info__text text-sm !leading-[140%] colored pb-5 md:text-base min-[992px]:text-xl">
+                                 We are the trusted experts for luxury appliance repair across North Carolina’s Triangle Area.
+                            </p>
+                            <p class="repair-info__text text-sm !leading-[140%] md:text-base min-[992px]:text-xl">
+                                Our certified technicians bring more than a decade of experience to every job. 
+                                We use only OEM parts and guarantee our work. Whether it’s a Sub-Zero fridge in Cary, 
+                                a Viking oven in Durham, or a Wolf cooktop in Chapel Hill — we restore your appliances 
+                                to peak performance.
+                            </p>
+                        </div>
+                        <div class="repair-info__image pt-2 min-[992px]:mt-[-110px] min-[992px]:w-full">
+                            <img class="max-h-[440px] m-auto md:max-h-[550px] min-[992px]:h-auto min-[1400px]:h-[384px] min-[992px]:w-[496px] min-[992px]:object-cover min-[992px]:object-top min-[992px]:absolute min-[992px]:right-0" src="@img/repair-appliances.png" alt="Sub-Zero fridge and Viking oven">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="payment-options py-16 min-[992px]:py-24">
+                <div class="payment-options__container flex flex-col gap-6">
+                    <div class="payment-options__info md:pb-3 min-[992px]:pb-16">
+                        <h2 class="payment-options__title text-2xl font-semibold !leading-[100%] pb-2 md:text-3xl md:text-center md:pb-3 min-[992px]:font-bold min-[992px]:text-[40px] min-[992px]:pb-6">Easy Payment Options</h2>
+                        <p class="payment-options__subtitle text-sm !leading-[140%] md:text-base md:text-center min-[992px]:text-xl">We accept:</p>
+                    </div>
+                    <div class="payment-options__lists flex flex-col gap-4 md:max-w-[670px] md:w-full md:m-auto text-sm font-semibold !leading-[120%] md:text-xl min-[992px]:text-2xl min-[992px]:max-w-[1048px] min-[992px]:gap-16">
+                        <div class="payment-options__list flex flex-col gap-4 md:flex-row min-[992px]:gap-8">
+                            <div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="@img/payment-options/cash.svg"><p class="payment-options-item__title">Cash</p></div>
+                            <div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="@img/payment-options/creditcard.svg"><p class="payment-options-item__title">Credit cards <img class="pt-1 md:w-24 min-[992px]:w-[129px]" src="@img/payment-options/creditcards.svg"></p></div>
+                            <div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8" src="@img/payment-options/zelle.svg"><p class="payment-options-item__title">Zelle</p></div>
+                        </div>
+                        <div class="payment-options__list flex flex-col gap-4 md:flex-row min-[992px]:gap-8">
+                            <div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="@img/payment-options/venmo.svg"><p class="payment-options-item__title">Venmo</p></div>
+                            <div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="@img/payment-options/checks.svg"><p class="payment-options-item__title">Checks</p></div>
+                            <div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="@img/payment-options/invoices.svg"><p class="payment-options-item__title">Invoices for regular clients</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-us bg-[#E9E9E9] py-16 min-[992px]:py-24">
+                <div class="contact-us__container flex flex-col gap-4 min-[992px]:gap-16">
+                    <div class="contact-us-info">
+                        <h2 class="contact-us-info__title text-2xl font-semibold !leading-[100%] pb-2 md:text-3xl md:text-center min-[992px]:font-bold min-[992px]:text-[40px] min-[992px]:pb-6">Contact Us</h2>
+                        <p class="contact-us-info__subtitle text-sm !leading-[140%] md:text-base md:text-center min-[992px]:text-xl">Fast, reliable service is just a call away.</p>
+                    </div>
+                    <div class="contact-us__text flex flex-col gap-4 md:flex-row max-w-[928px] md:w-full md:m-auto min-[992px]:gap-8">
+                        <div class="contact-us__time flex gap-2 items-center font-semibold text-sm !leading-[140%] md:text-base md:w-full min-[992px]:text-2xl"><img class="min-[992px]:h-12" src="@img/time.svg">Mon–Sat, 8 AM – 7 PM</div>
+                        <div class="contact-us__location flex gap-2 items-center md:w-full"><img class="min-[992px]:h-12" src="@img/location.svg"><h2 class="contact-us-location__title flex flex-col font-semibold text-sm !leading-[140%] md:text-base min-[992px]:text-2xl">Raleigh, NC<span class="font-normal !leading-[140%] text-[#777777]">service across the Triangle Area</span></h2></div>
+                    </div>
+                    <div class="contact-us__butons flex flex-col gap-4 md:flex-row max-w-[928px] md:w-full md:m-auto min-[992px]:gap-8">
+                        <a href="tel:9199444446" class="contact-us__call-us text-white relative bgred rounded-lg flex gap-2 items-center justify-center px-4 py-2 font-semibold text-sm md:text-base md:w-full min-[992px]:text-2xl">
+                            <img class="min-[992px]:h-10" src="@img/header/phone.svg" alt="Phone" class="service-card__call-icon">
+                            Call Us: 919-944-4446
+                        </a>
+                        <button class="contact-us__email text-white relative bgred rounded-lg flex gap-2 items-center justify-center px-4 py-2 w-full font-semibold text-sm !leading-[100%] md:text-base min-[992px]:text-2xl">
+                            <img class="min-[992px]:h-10" src="@img/email.svg">
+                            Send an email
+                        </button>
+                    </div>
+                </div>
+            </section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
