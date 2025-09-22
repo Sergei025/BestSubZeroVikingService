@@ -595,9 +595,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity,1))
 }
-.bg-\[url\(\'img\/hero\.webp\'\)\] {
-  background-image: url(img/hero.webp)
-}
 .bg-cover {
   background-size: cover
 }
@@ -979,6 +976,9 @@ video {
 .header-call-button__icon.shake {
   -webkit-animation: shake .6s ease-in-out;
   animation: shake .6s ease-in-out
+}
+.hero {
+  background-image: url(../img/hero.webp)
 }
 .hero .service .service__guarantee .service__guarantee-text {
   background: linear-gradient(90deg,#ba9643 0,#eecf71 30.83%,#ba9642 57.25%,#e0c16f 89.82%);
