@@ -1,4 +1,5 @@
 .menu {
+	top: -300%;
 	// .menu__icon
 	&__icon {
 	}
@@ -9,7 +10,6 @@
 		position: fixed;
 		width: 100%;
 		left: 0;
-		top: -100%;
 		overflow: auto;
 		transition: top 0.3s ease;
 		background-color: #EA4A35;

@@ -4685,82 +4685,82 @@
             const mapLink = document.querySelector(".location-selector__map a");
             const mapData = {
                 cary: {
-                    img: "img/location-maps/Cary.png",
+                    img: "img/location-maps/Cary.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Cary, NC",
                     alt: "Cary, NC"
                 },
                 morrisville: {
-                    img: "img/location-maps/Morrisville.png",
+                    img: "img/location-maps/Morrisville.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Morrisville, NC",
                     alt: "Morrisville, NC"
                 },
                 apex: {
-                    img: "img/location-maps/Apex.png",
+                    img: "img/location-maps/Apex.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Apex, NC",
                     alt: "Apex, NC"
                 },
                 hayesbarton: {
-                    img: "img/location-maps/HayesBarton.png",
+                    img: "img/location-maps/HayesBarton.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Hayes Barton, NC",
                     alt: "Hayes Barton"
                 },
                 northhills: {
-                    img: "img/location-maps/NorthHills.png",
+                    img: "img/location-maps/NorthHills.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=North Hills, NC",
                     alt: "North Hills (Midtown)"
                 },
                 budleigh: {
-                    img: "img/location-maps/Budleigh.png",
+                    img: "img/location-maps/Budleigh.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Budleigh, NC",
                     alt: "Budleigh"
                 },
                 historicoakwood: {
-                    img: "img/location-maps/HistoricOakwood.png",
+                    img: "img/location-maps/HistoricOakwood.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Historic Oakwood, NC",
                     alt: "Historic Oakwood"
                 },
                 cameronvillage: {
-                    img: "img/location-maps/CameronVillage.png",
+                    img: "img/location-maps/CameronVillage.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Cameron Village, NC",
                     alt: "Cameron Village"
                 },
                 durham: {
-                    img: "img/location-maps/Durham.png",
+                    img: "img/location-maps/Durham.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Durham, NC",
                     alt: "Durham, NC"
                 },
                 chapelhill: {
-                    img: "img/location-maps/ChapelHill.png",
+                    img: "img/location-maps/ChapelHill.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Chapel Hill, NC",
                     alt: "Chapel Hill, NC"
                 },
                 wakeforest: {
-                    img: "img/location-maps/WakeForest.png",
+                    img: "img/location-maps/WakeForest.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Wake Forest, NC",
                     alt: "Wake Forest, NC"
                 },
                 briercreek: {
-                    img: "img/location-maps/BrierCreek.png",
+                    img: "img/location-maps/BrierCreek.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Brier Creek, NC",
                     alt: "Brier Creek"
                 },
                 countryclubhills: {
-                    img: "img/location-maps/CountryClub.png",
+                    img: "img/location-maps/CountryClub.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Country Club Hills, NC",
                     alt: "Country Club Hills"
                 },
                 glenwood: {
-                    img: "img/location-maps/Glenwood.png",
+                    img: "img/location-maps/Glenwood.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Glenwood, NC",
                     alt: "Glenwood"
                 },
                 cameronpark: {
-                    img: "img/location-maps/CameronPark.png",
+                    img: "img/location-maps/CameronPark.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Cameron Park, NC",
                     alt: "Cameron Park / Forest Park"
                 },
                 boylanheights: {
-                    img: "img/location-maps/BoylanHeights.png",
+                    img: "img/location-maps/BoylanHeights.webp",
                     link: "https://www.google.com/maps/search/?api=1&query=Boylan Heights, NC",
                     alt: "Boylan Heights"
                 }
