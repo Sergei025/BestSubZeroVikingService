@@ -978,7 +978,7 @@ video {
   animation: shake .6s ease-in-out
 }
 .hero {
-  background-image: url(../img/hero.webp)
+  background-image: url('../img/hero.gif')
 }
 .hero .service .service__guarantee .service__guarantee-text {
   background: linear-gradient(90deg,#ba9643 0,#eecf71 30.83%,#ba9642 57.25%,#e0c16f 89.82%);
