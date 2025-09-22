@@ -192,10 +192,21 @@
     .how-it-works__step {
 
 	    &:before {
-		    top: 45px;
+		    top: 84px;
         }
         &:not(:last-child)::after {
-		    top: 50px;
+		    top: 89px;
+        }
+    } 
+}
+@media (min-width: 1125px) {
+    .how-it-works__step {
+
+	    &:before {
+		    top: 55px;
+        }
+        &:not(:last-child)::after {
+		    top: 60px;
         }
     } 
 }
