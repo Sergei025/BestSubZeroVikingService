@@ -59,7 +59,7 @@ export function pageNavigation() {
 				}
 				if (entry.isIntersecting) {
 					// Бачимо об'єкт
-					// navigatorActiveItem ? navigatorActiveItem.classList.remove('_navigator-active') : null;
+					navigatorActiveItem ? navigatorActiveItem.classList.remove('_navigator-active') : null;
 					navigatorCurrentItem ? navigatorCurrentItem.classList.add('_navigator-active') : null;
 					//const activeItems = document.querySelectorAll('._navigator-active');
 					//activeItems.length > 1 ? chooseOne(activeItems) : null
@@ -82,7 +82,6 @@ export function pageNavigation() {
 			goToHash = `.${getHash()}`;
 		}
 		goToHash ? gotoBlock(goToHash, true, 500, 20) : null;
-		console.log('dsfdf');
 	}
 }
 // Робота з шапкою при скролі

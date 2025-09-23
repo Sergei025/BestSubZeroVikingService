@@ -44,9 +44,13 @@
 			height: 10px;
             background-color: #777777;
 			border-radius: 100%;
+			cursor: pointer;
 		}
 		.swiper-pagination-bullet-active {
 			background-color: #EA4A35;
+		}
+		.swiper-pagination-bullet:hover {
+            background-color: #A73727;
 		}
 	}
 }

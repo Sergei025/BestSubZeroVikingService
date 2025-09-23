@@ -20,22 +20,12 @@ const menuItems = document.querySelectorAll('header .menu__item')
 menuItems.forEach(item => {
     item.addEventListener('click', () => {
         // Сначала убираем класс у всех элементов
-        menuItems.forEach(i => i.classList.remove('border-white', 'text-white', 'border', 'py-[15px]', 'px-[15px]'));
+        menuItems.forEach(i => i.classList.remove('_navigator-active'));
 
         // Добавляем класс только к кликнутому
-        item.classList.add('border-white', 'text-white', 'border', 'py-[15px]', 'px-[15px]')
+        item.classList.add('_navigator-active')
     });
 });
-
-const loaders = document.querySelectorAll('[id="loader"]')
-const contents = document.querySelectorAll('[id="content"]')
-
-setTimeout(() => {
-	loaders.forEach(loader => (loader.style.display = 'none'))
-	contents.forEach(content => (content.style.display = 'block'))
-}, 3000)
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
 	const radios = document.querySelectorAll('.location-selector__radio')

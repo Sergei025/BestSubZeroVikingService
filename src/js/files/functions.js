@@ -733,4 +733,68 @@ export function dataMediaQueries(array, dataSetValue) {
 		}
 	}
 }
+export function initTechAvailability() {
+	const MIN = 1
+	const MAX = 3
+	const BUCKET_MINUTES = 20
+	const MIN_DELAY_MS = 1200
+	const MAX_DELAY_MS = 2800
+
+	function nowBucketId() {
+		return String(Math.floor(Date.now() / (BUCKET_MINUTES * 60 * 1000)))
+	}
+
+	function deterministicInt(min, max, salt) {
+		let h = 2166136261
+		const str = salt + '|' + location.hostname + '|' + navigator.userAgent
+		for (let i = 0; i < str.length; i++) {
+			h ^= str.charCodeAt(i)
+			h = (h * 16777619) >>> 0
+		}
+		const span = (max - min + 1) >>> 0
+		return (h % span) + min
+	}
+
+	function pluralize(n) {
+		return n === 1 ? 'Technician' : 'Technicians'
+	}
+
+	function randomDelay() {
+		return Math.floor(
+			MIN_DELAY_MS + Math.random() * (MAX_DELAY_MS - MIN_DELAY_MS)
+		)
+	}
+
+	function getCountForCurrentSlot() {
+		const slot = nowBucketId()
+		const key = 'tech_availability_slot'
+		const valKey = 'tech_availability_value'
+		try {
+			const savedSlot = localStorage.getItem(key)
+			const savedVal = localStorage.getItem(valKey)
+			if (savedSlot === slot && savedVal) return parseInt(savedVal, 10)
+		} catch (_) {}
+		const n = deterministicInt(MIN, MAX, slot)
+		try {
+			localStorage.setItem(key, slot)
+			localStorage.setItem(valKey, String(n))
+		} catch (_) {}
+		return n
+	}
+
+	// --- Главная логика ---
+	const loader = document.getElementById('loader')
+	const content = document.getElementById('content')
+
+	loader.classList.remove('hidden')
+	content.classList.add('hidden')
+
+	const n = getCountForCurrentSlot()
+
+	setTimeout(() => {
+		loader.classList.add('hidden')
+		content.textContent = `${n} ${pluralize(n)}`
+		content.classList.remove('hidden')
+	}, randomDelay())
+}
 //================================================================================================================================================================================================================================================================================================================
