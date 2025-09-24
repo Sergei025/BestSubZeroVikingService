@@ -749,6 +749,9 @@ video {
 .font-\[\'Noto_Sans\'\] {
   font-family: 'Noto Sans'
 }
+.font-\[Arial\] {
+  font-family: Arial
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem
