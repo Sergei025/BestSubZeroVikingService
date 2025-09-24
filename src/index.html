@@ -39,7 +39,7 @@
                                     <img src="@img/worker-icon.svg" alt="Technician" class="min-[992px]:m-auto h-8 min-[992px]:h-12">
                                     <p class="service-cardavailability-info__text text-white text-center !leading-[142%] md:text-sm min-[992px]:text-2xl">
                                         Live availability:<br>
-                                        <img id="loader" width="33px" height="33px" class="w-5 h-5 m-auto min-[992px]:w-[33px] min-[992px]:h-[33px]" src="@img/circle-loader.gif" alt="Loading...">
+                                        <img id="loader" width="33px" height="33px" srcset="@img/circle-loader-mobile.gif 33w,@img/circle-loader.gif 475w" sizes="(max-width: 992) 33px, 475px" class="w-5 h-5 m-auto min-[992px]:w-[33px] min-[992px]:h-[33px]" src="@img/circle-loader.gif" alt="Loading...">
                                         <span id="content" class="service-cardavailability__info__count hidden text-center">—</span>
                                     </p>
                                 </div>
@@ -198,7 +198,10 @@
                     <p class="services__note text-sm text-[#777777] !leading-[140%] pt-6 md:max-w-[300px] md:text-base min-[850px]:max-w-[370px] min-[950px]:max-w-[475px] min-[992px]:text-xl min-[992px]:max-w-[425px] min-[992px]:pt-16 min-[1170px]:max-w-[626px] min-[1340px]:max-w-[766px]">
                         While we do not service budget refrigerators, we can still repair ranges, stoves, cooktops, and ovens from most brands — including Samsung, LG, GE, and others.
                     </p>
-                    <img src="@img/bg-image1.webp" class="mb-[-11%] md:absolute md:right-4 md:bottom-0 md:h-[350px] md:mb-[-120px] min-[992px]:h-[441px] min-[992px]:mb-[-167px]" loading="lazy">
+                    <img src="@img/bg-image1.webp" 
+                        srcset="@img/bg-image1-271.webp 271w, @img/bg-image1-411.webp 411w, @img/bg-image1.webp 582w" 
+                        sizes="(max-width: 320px) 271w, (max-width: 475px) 411px, 582px" 
+                        class="mb-[-11%] md:absolute md:right-4 md:bottom-0 md:h-[350px] md:mb-[-120px] min-[992px]:h-[441px] min-[992px]:mb-[-167px]" loading="lazy">
                 </div>
             </section>
 			<section data-watch="navigator" class="location-selector bg-[#E9E9E9] py-16 min-[992px]:py-24">
