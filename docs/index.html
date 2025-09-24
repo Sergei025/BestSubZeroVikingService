@@ -11,17 +11,47 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap&_v=20250924004938" rel="stylesheet">
 	<!-- Подключить шрифты. Можно 1 раз загрузить через cnd google fonts а потом скопировать font face в pagespeed и вставить сюда -->
 	<style>
-		/* @font-face {
-			font-family: 'Jost';
+		/* Noto Sans 400 */
+		@font-face {
+			font-family: 'Noto Sans';
+			src: url('@scss/fonts/NotoSans-Regular.woff2') format('woff2');
+			font-weight: 400;
 			font-style: normal;
-			font-weight: 300;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/jost/v19/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
-			unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		} */
+		}
+
+		/* Noto Sans 500 */
+		@font-face {
+			font-family: 'Noto Sans';
+			src: url('@scss/fonts/NotoSans-Medium.woff2') format('woff2');
+			font-weight: 500;
+			font-style: normal;
+		}
+
+		/* Noto Sans 600 */
+		@font-face {
+			font-family: 'Noto Sans';
+			src: url('@scss/fonts/NotoSans-SemiBold.woff2') format('woff2');
+			font-weight: 600;
+			font-style: normal;
+		}
+
+		/* Noto Sans 700 */
+		@font-face {
+			font-family: 'Noto Sans';
+			src: url('@scss/fonts/NotoSans-Bold.woff2') format('woff2');
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		/* Noto Sans 900 */
+		@font-face {
+			font-family: 'Noto Sans';
+			src: url('../NotoSans-Black.woff2') format('woff2');
+			font-weight: 900;
+			font-style: normal;
+		}
 	</style>
 	<!-- Дефолтные стили -->
 	<style>
@@ -74,7 +104,7 @@
 	<style>
 	</style>
 
-	<link rel="preload" href="css/style.min.css?_v=20250924004938" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="css/style.min.css?_v=20250924111437" as="style" onload="this.rel='stylesheet'">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -109,7 +139,7 @@
 							</ul>
 						</nav>
 					</div>
-					<a href="" class="header__call-button group flex items-center font-['Noto_Sans'] font-medium text-white py-2 px-4 border transition-colors duration-300 ease-in-out border-white rounded-lg gap-2 h-12 ml-auto mr-2 hover:bg-white hover:text-black md:border-2 md:mr-2 md:ml-0 md:py-4 md:px-8">
+					<a href="tel:9199444446" class="header__call-button group flex items-center font-['Noto_Sans'] font-medium text-white py-2 px-4 border transition-colors duration-300 ease-in-out border-white rounded-lg gap-2 h-12 ml-auto mr-2 hover:bg-white hover:text-black md:border-2 md:mr-2 md:ml-0 md:py-4 md:px-8">
 						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" class="header-call-button__icon h-6 group-hover:fill-black" xmlns="http://www.w3.org/2000/svg">
 							<path d="M10.1553 6.82031C10.1553 6.64148 10.1203 6.46401 10.0518 6.29883C9.98324 6.13366 9.88243 5.98374 9.75586 5.85742V5.85645L8.04883 4.14941H8.04785C7.92154 4.02285 7.77162 3.92203 7.60645 3.85352C7.4413 3.78503 7.26375 3.75 7.08496 3.75C6.90636 3.75005 6.72944 3.78511 6.56446 3.85352C6.39932 3.92202 6.24935 4.02288 6.12305 4.14941L6.12207 4.15039L5.39258 4.87695C4.44559 5.82395 4.03438 7.13167 4.36133 8.31445L4.4375 8.5498V8.55078C5.44145 11.3082 7.03557 13.8134 9.1084 15.8906C11.1858 17.964 13.6913 19.5584 16.4492 20.5625L16.4512 20.5635C17.6928 21.0182 19.112 20.6173 20.1221 19.6064L20.8506 18.8779H20.8516C20.978 18.7517 21.078 18.6015 21.1465 18.4365C21.215 18.2714 21.25 18.0939 21.25 17.915C21.25 17.7362 21.215 17.5587 21.1465 17.3936C21.078 17.2286 20.978 17.0784 20.8516 16.9521H20.8506L19.1426 15.2441C19.0163 15.1177 18.8662 15.0177 18.7012 14.9492C18.5361 14.8808 18.3594 14.8448 18.1807 14.8447C18.0018 14.8447 17.8244 14.8807 17.6592 14.9492C17.4941 15.0177 17.344 15.1177 17.2178 15.2441L17.2168 15.2451L16.7959 15.665C16.5583 15.9026 16.2762 16.0911 15.9658 16.2197C15.6553 16.3484 15.3224 16.415 14.9863 16.415C14.6501 16.415 14.3165 16.3484 14.0059 16.2197C13.6954 16.0911 13.4134 15.9026 13.1758 15.665L9.33594 11.8242C9.09817 11.5865 8.90896 11.3038 8.78028 10.9932C8.65167 10.6826 8.58596 10.3498 8.58594 10.0137C8.58594 9.67762 8.65172 9.34467 8.78028 9.03418C8.90896 8.72355 9.09817 8.44085 9.33594 8.20312L9.75586 7.7832V7.78223C9.88239 7.65592 9.98326 7.50596 10.0518 7.34082C10.1202 7.17581 10.1552 6.99893 10.1553 6.82031ZM11.6553 6.82031C11.6552 7.19628 11.5816 7.56874 11.4375 7.91602C11.2935 8.26307 11.0823 8.57825 10.8164 8.84375L10.3965 9.26367C10.2981 9.36205 10.2193 9.47889 10.166 9.60742C10.1127 9.73604 10.0859 9.87445 10.0859 10.0137C10.086 10.1527 10.1128 10.2905 10.166 10.4189C10.2193 10.5475 10.2981 10.6643 10.3965 10.7627V10.7637L14.2363 14.6045C14.3347 14.7028 14.4516 14.7807 14.5801 14.834C14.7087 14.8873 14.8471 14.915 14.9863 14.915C15.1254 14.915 15.2631 14.8872 15.3916 14.834C15.5201 14.7807 15.637 14.7028 15.7354 14.6045L15.7363 14.6035L16.1572 14.1836C16.4226 13.918 16.7381 13.7074 17.085 13.5635C17.4323 13.4195 17.8047 13.3447 18.1807 13.3447C18.5566 13.3448 18.9291 13.4194 19.2764 13.5635C19.6236 13.7076 19.9395 13.9184 20.2051 14.1846H20.2041L21.9102 15.8906C22.1763 16.1563 22.3881 16.472 22.5322 16.8193C22.6763 17.1667 22.75 17.539 22.75 17.915C22.75 18.2911 22.6763 18.6634 22.5322 19.0107C22.3882 19.358 22.1772 19.6738 21.9111 19.9395L21.9102 19.9385L21.1836 20.667C19.8381 22.0135 17.8223 22.6619 15.9365 21.9717V21.9727C12.9732 20.8938 10.2809 19.1799 8.04883 16.9521L8.04785 16.9512C5.82048 14.7194 4.10721 12.0282 3.02832 9.06543L2.96778 8.88867C2.37869 7.05421 3.02923 5.12019 4.33301 3.81641L5.06153 3.08887C5.32701 2.82302 5.64223 2.61174 5.98926 2.46777C6.3365 2.32374 6.70904 2.25005 7.08496 2.25C7.46103 2.25 7.83428 2.32368 8.18164 2.46777C8.52845 2.61166 8.84303 2.82325 9.1084 3.08887L10.8164 4.7959H10.8154C11.0816 5.06155 11.2934 5.37725 11.4375 5.72461C11.5815 6.07184 11.6553 6.44442 11.6553 6.82031Z" fill="currentColor" />
 						</svg>
@@ -926,7 +956,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250924004938" defer></script>
+	<script src="js/app.min.js?_v=20250924111437" defer></script>
 </body>
 
 </html>
