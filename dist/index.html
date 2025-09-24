@@ -328,7 +328,8 @@
 	<style>
 	</style>
 
-	<link rel="preload" href="css/style.min.css?_v=20250924133623" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="css/style.min.css?v=20250924&_v=20250924141135" as="style" onload="this.rel='stylesheet'">
+	<link rel="stylesheet" href="css/style.min.css?v=20250924&_v=20250924141135" />
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -379,8 +380,8 @@
 		<main class="page relative">
 			<section class="hero relative flex flex-col gap-16 !pt-28 !pb-20 md:mt-[-64px] md:!pt-60 min-[992px]:pb-[196px]">
 				<div class="hero__container min-[992px]:!max-w-full">
-					<video class="object-center top-0 left-0 w-full h-full object-cover absolute" autoplay muted loop playsinline>
-						<source src="img/hero.webm" type="video/webm">
+					<video class="object-center top-0 left-0 w-full h-full object-cover absolute" autoplay muted loop playsinline preload="metadata">
+						<source src="img/hero.webm?v=1" type="video/webm">
 					</video>
 					<div class="absolute inset-0 bg-[#111111D9]"></div>
 					<div class="service flex flex-col gap-4 relative pb-16 min-[992px]:gap-8 min-[992px]:pb-32">
@@ -428,19 +429,19 @@
 			<section class="benefits bgred">
 				<div class="benefits__container flex flex-col gap-4 !py-6 md:flex-row min-[992px]:!py-8">
 					<div class="benefits__item flex px-4 py-3 gap-4 bg-white rounded-lg items-center md:w-full min-[992px]:p-6">
-						<img src="img/repair.svg" class="min-[992px]:h-12">
+						<img src="img/repair.svg" class="min-[992px]:h-12" loading="lazy">
 						<div class="benefits__text font-semibold !leading-[120%] pr-12 md:pr-0 min-[992px]:text-[28px]">
 							OEM Parts in Stock + Warranty
 						</div>
 					</div>
 					<div class="benefits__item flex px-4 py-3 gap-4 bg-white rounded-lg items-center md:w-full min-[992px]:p-6">
-						<img src="img/over.svg" class="min-[992px]:h-12">
+						<img src="img/over.svg" class="min-[992px]:h-12" loading="lazy">
 						<div class="benefits__text font-semibold !leading-[120%] pr-20 md:pr-0 min-[992px]:text-[28px]">
 							Over 11 years of experience
 						</div>
 					</div>
 					<div class="benefits__item flex px-4 py-3 gap-4 bg-white rounded-lg items-center md:w-full min-[992px]:p-6">
-						<img src="img/location.svg" class="min-[992px]:h-12">
+						<img src="img/location.svg" class="min-[992px]:h-12" loading="lazy">
 						<div class="benefits__text font-semibold !leading-[120%] pr-20 md:pr-0 min-[992px]:text-[28px]">
 							Triangle Area Coverage
 						</div>
@@ -459,20 +460,20 @@
 						<div class="services__lists pt-4 md:flex md:gap-4 min-[992px]:pt-6 min-[992px]:gap-8">
 							<ul class="services__list flex flex-col gap-2 pb-2 md:pb-0 md:w-full md:gap-4 min-[992px]:gap-6">
 								<li class="services__item flex gap-2">
-									<img class="h-6 min-[992px]:h-10" src="img/Refrigerators.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/Refrigerators.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Refrigerators</div>
 										<div class="services__details text-[#777777] !leading-[140%]">freon leaks, compressors, sensors, control boards, door seals</div>
 									</div>
 								</li>
 								<li class="services__item flex gap-2 items-center">
-									<img class="h-6 min-[992px]:h-10" src="img/Freezers.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/Freezers.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Freezers</div>
 									</div>
 								</li>
 								<li class="services__item flex gap-2 items-center">
-									<img class="h-6 min-[992px]:h-10" src="img/WineCoolers.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/WineCoolers.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Wine Coolers</div>
 									</div>
@@ -480,21 +481,21 @@
 							</ul>
 							<ul class="services__list flex flex-col gap-2 md:w-full md:gap-4 min-[992px]:gap-6">
 								<li class="services__item flex gap-2">
-									<img class="h-6 min-[992px]:h-10" src="img/IceMakers.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/IceMakers.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Ice Makers</div>
 										<div class="services__details text-[#777777] !leading-[140%]">built-in premium models</div>
 									</div>
 								</li>
 								<li class="services__item flex gap-2">
-									<img class="h-6 min-[992px]:h-10" src="img/OutdoorAppliances.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/OutdoorAppliances.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Outdoor Appliances</div>
 										<div class="services__details text-[#777777] !leading-[140%]">outdoor refrigerators, BBQ fridges, ice makers</div>
 									</div>
 								</li>
 								<li class="services__item flex gap-2">
-									<img class="h-6 min-[992px]:h-10" src="img/WallOvens.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/WallOvens.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Wall Ovens</div>
 										<div class="services__details text-[#777777] !leading-[140%]">heating elements, convection systems, sensors, control panels</div>
@@ -503,27 +504,27 @@
 							</ul>
 							<ul class="services__list flex flex-col gap-2 md:w-full md:gap-4 min-[992px]:gap-6">
 								<li class="services__item flex gap-2">
-									<img class="h-6 min-[992px]:h-10" src="img/Microwaves.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/Microwaves.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Microwaves</div>
 										<div class="services__details text-[#777777] !leading-[140%]">we do not service other brands</div>
 									</div>
 								</li>
 								<li class="services__item flex gap-2">
-									<img class="h-6 min-[992px]:h-10" src="img/CooktopsRangetops.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/CooktopsRangetops.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Cooktops & Rangetops</div>
 										<div class="services__details text-[#777777] !leading-[140%]">gas, electric, induction</div>
 									</div>
 								</li>
 								<li class="services__item flex gap-2 items-center">
-									<img class="h-6 min-[992px]:h-10" src="img/Ranges.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/Ranges.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Ranges</div>
 									</div>
 								</li>
 								<li class="services__item flex gap-2 items-center">
-									<img class="h-6 min-[992px]:h-10" src="img/RangeHoods.svg">
+									<img class="h-6 min-[992px]:h-10" src="img/RangeHoods.svg" loading="lazy">
 									<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 										<div class="services__name !leading-[140%]">Range Hoods</div>
 									</div>
@@ -535,13 +536,13 @@
 						<h3 class="services__heading text-lg colored font-semibold !leading-[120%] md:text-2xl min-[992px]:text-[32px]">What we do not service:</h3>
 						<ul class="services__list flex flex-col gap-2 pt-4 md:flex-row md:gap-4 min-[992px]:pt-6 min-[992px]:gap-8">
 							<li class="services__item flex gap-2 items-center md:w-[186px] min-[992px]:w-full">
-								<img class="h-6 min-[992px]:h-10" src="img/Dishwashers.svg">
+								<img class="h-6 min-[992px]:h-10" src="img/Dishwashers.svg" loading="lazy">
 								<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 									<div class="services__name !leading-[140%]">Dishwashers</div>
 								</div>
 							</li>
 							<li class="services__item flex gap-2 items-center min-[992px]:w-full">
-								<img class="h-6 min-[992px]:h-10" src="img/Washersdryers.svg">
+								<img class="h-6 min-[992px]:h-10" src="img/Washersdryers.svg" loading="lazy">
 								<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 									<div class="services__name !leading-[140%]">Washers & dryers</div>
 								</div>
@@ -549,14 +550,14 @@
 						</ul>
 						<ul class="services__list flex flex-col gap-2 pt-4 md:flex-row md:gap-4 min-[992px]:pt-6 min-[992px]:gap-8">
 							<li class="services__item flex gap-2 min-[992px]:w-full">
-								<img class="h-6 min-[992px]:h-10" src="img/Smallappliances.svg">
+								<img class="h-6 min-[992px]:h-10" src="img/Smallappliances.svg" loading="lazy">
 								<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 									<div class="services__name !leading-[140%]">Small appliances</div>
 									<div class="services__details text-[#777777] !leading-[140%]">kettles, toasters, etc.</div>
 								</div>
 							</li>
 							<li class="services__item flex gap-2 min-[992px]:w-full">
-								<img class="h-6 min-[992px]:h-10" src="img/Budgetbrands.svg">
+								<img class="h-6 min-[992px]:h-10" src="img/Budgetbrands.svg" loading="lazy">
 								<div class="services__content text-sm md:text-base min-[992px]:text-xl">
 									<div class="services__name !leading-[140%]">Budget brands</div>
 									<div class="services__details text-[#777777] !leading-[140%] md:w-[186px] min-[992px]:w-full">Samsung, LG, Whirlpool, GE, Frigidaire, etc.</div>
@@ -567,7 +568,7 @@
 					<p class="services__note text-sm text-[#777777] !leading-[140%] pt-6 md:max-w-[300px] md:text-base min-[850px]:max-w-[370px] min-[950px]:max-w-[475px] min-[992px]:text-xl min-[992px]:max-w-[425px] min-[992px]:pt-16 min-[1170px]:max-w-[626px] min-[1340px]:max-w-[766px]">
 						While we do not service budget refrigerators, we can still repair ranges, stoves, cooktops, and ovens from most brands — including Samsung, LG, GE, and others.
 					</p>
-					<img src="img/bg-image1.webp" class="mb-[-11%] md:absolute md:right-4 md:bottom-0 md:h-[350px] md:mb-[-120px] min-[992px]:h-[441px] min-[992px]:mb-[-167px]">
+					<img src="img/bg-image1.webp" class="mb-[-11%] md:absolute md:right-4 md:bottom-0 md:h-[350px] md:mb-[-120px] min-[992px]:h-[441px] min-[992px]:mb-[-167px]" loading="lazy">
 				</div>
 			</section>
 			<section data-watch="navigator" class="location-selector bg-[#E9E9E9] py-16 min-[992px]:py-24">
@@ -655,7 +656,7 @@
 						</div>
 						<div class="location-selector__map md:w-1/2">
 							<a class="w-full block" href="https://www.google.com/maps/search/?api=1&query=Morrisville, NC" target="_blank">
-								<img id="location-map" class="rounded-lg w-full" src="img/location-maps/Morrisville.webp" alt="Morrisville, NC">
+								<img id="location-map" class="rounded-lg w-full" src="img/location-maps/Morrisville.webp" alt="Morrisville, NC" loading="lazy">
 							</a>
 						</div>
 						<div class="location-selector__footer text-center md:hidden">
@@ -673,7 +674,7 @@
 							<p class="why-choose__subtitle text-sm !leading-[140%] mb-5 text-white min-[992px]:text-xl">Our focus is quality over quantity.<br> Every repair is done right the first time.</p>
 						</div>
 						<div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg md:w-1/3 min-[992px]:p-6 min-[992px]:pb-[66px]">
-							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/over.svg">
+							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/over.svg" loading="lazy">
 							<div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
 								Experience you can trust
 							</div>
@@ -682,7 +683,7 @@
 							</div>
 						</div>
 						<div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg md:w-1/3 min-[992px]:p-6 min-[992px]:pb-[66px]">
-							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/repair.svg">
+							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/repair.svg" loading="lazy">
 							<div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
 								OEM parts only
 							</div>
@@ -693,7 +694,7 @@
 					</div>
 					<div class="why-choose__items flex flex-col gap-4 pt-4 md:flex-row min-[992px]:pt-8 min-[992px]:gap-8">
 						<div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg w-full min-[992px]:p-6">
-							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/warranty.svg">
+							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/warranty.svg" loading="lazy">
 							<div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
 								Warranty on all work
 							</div>
@@ -702,7 +703,7 @@
 							</div>
 						</div>
 						<div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg w-full min-[992px]:p-6 min-[992px]:pb-[38px]">
-							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/response.svg">
+							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/response.svg" loading="lazy">
 							<div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
 								Fast response
 							</div>
@@ -711,7 +712,7 @@
 							</div>
 						</div>
 						<div class="why-choose__item flex flex-col gap-4 px-4 py-3 bg-white rounded-lg w-full min-[992px]:p-6">
-							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/professionalservice.svg">
+							<img class="h-6 w-6 min-[992px]:w-12 min-[992px]:h-12" src="img/professionalservice.svg" loading="lazy">
 							<div class="why-choose__title text-lg font-semibold !leading-[120%] min-[992px]:text-[32px]">
 								Professional service
 							</div>
@@ -742,10 +743,10 @@
 							</ul>
 						</div>
 						<div class="parts__img">
-							<img class="rounded-lg md:h-auto md:max-w-[600px] md:w-full min-[992px]:max-w-[687px] min-[992px]:w-full" src="img/partsequipment.webp">
+							<img class="rounded-lg md:h-auto md:max-w-[600px] md:w-full min-[992px]:max-w-[687px] min-[992px]:w-full" src="img/partsequipment.webp" loading="lazy">
 						</div>
 					</div>
-					<img src="img/bg-image2.webp" class="hidden w-[273px] h-auto ml-[20px] absolute md:block md:w-[196px] md:bottom-[-144px] min-[850px]:w-60 min-[850px]:bottom-[-160px] min-[992px]:w-[250px] min-[992px]:bottom-[-207px] min-[1050px]:w-[273px]">
+					<img src="img/bg-image2.webp" class="hidden w-[273px] h-auto ml-[20px] absolute md:block md:w-[196px] md:bottom-[-144px] min-[850px]:w-60 min-[850px]:bottom-[-160px] min-[992px]:w-[250px] min-[992px]:bottom-[-207px] min-[1050px]:w-[273px]" loading="lazy">
 				</div>
 			</section>
 			<section data-watch="navigator" class="how-it-works bg-[#E9E9E9] py-16  min-[992px]:py-24">
@@ -795,7 +796,7 @@
 					</div>
 					<div class="inspection-pricing__content flex flex-col gap-6 min-[992px]:flex-row min-[992px]:gap-8">
 						<div class="inspection-pricing__img min-[992px]:order-2">
-							<img class="rounded-lg w-full" src="img/inspection.webp">
+							<img class="rounded-lg w-full" src="img/inspection.webp" loading="lazy">
 						</div>
 						<div class="inspection-pricing-info min-[992px]:order-1 min-[992px]:max-w-[400px]">
 							<h3 class=" inspection-pricing-info__title colored text-lg font-semibold !leading-[100%] pb-2 md:text-2xl min-[992px]:text-[32px] min-[992px]:pb-6">Inspection & Pricing</h3>
@@ -825,8 +826,8 @@
 								<!-- Слайд -->
 								<div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
 									<div class="testimonials-reviews__starblock flex justify-between">
-										<img class="min-[992px]:h-6" src="img/reviewstars.svg">
-										<img class="min-[992px]:h-[28px]" src="img/google.svg">
+										<img class="min-[992px]:h-6" src="img/reviewstars.svg" loading="lazy">
+										<img class="min-[992px]:h-[28px]" src="img/google.svg" loading="lazy">
 									</div>
 									<div class="testimonials-reviews__info overflow-auto pr-[10px]">
 										<div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">Ann Richards</div>
@@ -835,8 +836,8 @@
 								</div>
 								<div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
 									<div class="testimonials-reviews__starblock flex justify-between">
-										<img class="min-[992px]:h-6" src="img/reviewstars.svg">
-										<img class="min-[992px]:h-[28px]" src="img/google.svg">
+										<img class="min-[992px]:h-6" src="img/reviewstars.svg" loading="lazy">
+										<img class="min-[992px]:h-[28px]" src="img/google.svg" loading="lazy">
 									</div>
 									<div class="testimonials-reviews__info overflow-auto pr-[10px]">
 										<div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">Sharon Silver</div>
@@ -845,8 +846,8 @@
 								</div>
 								<div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
 									<div class="testimonials-reviews__starblock flex justify-between">
-										<img class="min-[992px]:h-6" src="img/reviewstars.svg">
-										<img class="min-[992px]:h-[28px]" src="img/google.svg">
+										<img class="min-[992px]:h-6" src="img/reviewstars.svg" loading="lazy">
+										<img class="min-[992px]:h-[28px]" src="img/google.svg" loading="lazy">
 									</div>
 									<div class="testimonials-reviews__info overflow-auto pr-[10px]">
 										<div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">T Moore</div>
@@ -855,8 +856,8 @@
 								</div>
 								<div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
 									<div class="testimonials-reviews__starblock flex justify-between">
-										<img class="min-[992px]:h-6" src="img/reviewstars.svg">
-										<img class="min-[992px]:h-[28px]" src="img/google.svg">
+										<img class="min-[992px]:h-6" src="img/reviewstars.svg" loading="lazy">
+										<img class="min-[992px]:h-[28px]" src="img/google.svg" loading="lazy">
 									</div>
 									<div class="testimonials-reviews__info overflow-auto pr-[10px]">
 										<div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">Sunni W (Sunnylit)</div>
@@ -865,8 +866,8 @@
 								</div>
 								<div class="testimonials-reviews__slide swiper-slide bg-[#FDFDFD] rounded-lg flex flex-col gap-4 p-4 max-h-[264px] min-[992px]:max-h-[320px] min-[992px]:p-6">
 									<div class="testimonials-reviews__starblock flex justify-between">
-										<img class="min-[992px]:h-6" src="img/reviewstars.svg">
-										<img class="min-[992px]:h-[28px]" src="img/google.svg">
+										<img class="min-[992px]:h-6" src="img/reviewstars.svg" loading="lazy">
+										<img class="min-[992px]:h-[28px]" src="img/google.svg" loading="lazy">
 									</div>
 									<div class="testimonials-reviews__info overflow-auto pr-[10px]">
 										<div class="testimonials-reviews-info__title font-semibold text-sm !leading-[120%] pb-1 min-[992px]:text-2xl">Cheryl King</div>
@@ -896,19 +897,19 @@
 									<div class="portfolio-img__wrapper swiper-wrapper">
 										<!-- Слайд -->
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo1.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo1.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo2.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo2.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo3.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo3.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo4.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo4.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo5.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo5.webp" alt="" loading="lazy">
 										</div>
 									</div>
 									<!-- Якщо потрібна пагінація -->
@@ -927,16 +928,16 @@
 									<div class="portfolio-img__wrapper swiper-wrapper">
 										<!-- Слайд -->
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide2/photo1.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide2/photo1.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide2/photo2.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide2/photo2.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide2/photo3.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide2/photo3.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide2/photo4.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide2/photo4.webp" alt="" loading="lazy">
 										</div>
 									</div>
 									<!-- Якщо потрібна пагінація -->
@@ -955,22 +956,22 @@
 									<div class="portfolio-img__wrapper swiper-wrapper">
 										<!-- Слайд -->
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo1.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo1.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo2.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo2.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo3.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo3.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo4.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo4.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo5.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo5.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo6.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide3/photo6.webp" alt="" loading="lazy">
 										</div>
 									</div>
 									<!-- Якщо потрібна пагінація -->
@@ -989,16 +990,16 @@
 									<div class="portfolio-img__wrapper swiper-wrapper min-[992px]:h-[533px]">
 										<!-- Слайд -->
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide4/photo1.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide4/photo1.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide4/photo2.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide4/photo2.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide4/photo3.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide4/photo3.webp" alt="" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
-											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide4/photo4.webp" alt="">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide4/photo4.webp" alt="" loading="lazy">
 										</div>
 									</div>
 									<!-- Якщо потрібна пагінація -->
@@ -1064,7 +1065,7 @@
 							</p>
 						</div>
 						<div class="repair-info__image pt-2 min-[992px]:mt-[-110px] min-[992px]:flex-[0_0_496px]">
-							<img class="max-h-[440px] m-auto md:max-h-[550px] min-[992px]:h-auto min-[992px]:w-[496px] min-[992px]:object-cover min-[992px]:object-top min-[992px]:absolute min-[992px]:right-0 min-[1435px]:h-[384px] min-[1435px]:bottom-[-62px]" src="img/repair-appliances.webp" alt="Sub-Zero fridge and Viking oven">
+							<img class="max-h-[440px] m-auto md:max-h-[550px] min-[992px]:h-auto min-[992px]:w-[496px] min-[992px]:object-cover min-[992px]:object-top min-[992px]:absolute min-[992px]:right-0 min-[1435px]:h-[384px] min-[1435px]:bottom-[-62px]" src="img/repair-appliances.webp" alt="Sub-Zero fridge and Viking oven" loading="lazy">
 						</div>
 					</div>
 				</div>
@@ -1077,24 +1078,24 @@
 					</div>
 					<div class="payment-options__lists flex flex-col gap-4 md:max-w-[670px] md:w-full md:m-auto text-sm font-semibold !leading-[120%] md:text-xl min-[992px]:text-2xl min-[992px]:max-w-[1048px] min-[992px]:gap-16">
 						<div class="payment-options__list flex flex-col gap-4 md:flex-row min-[992px]:gap-8">
-							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/cash.svg">
+							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/cash.svg" loading="lazy">
 								<p class="payment-options-item__title">Cash</p>
 							</div>
-							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/creditcard.svg">
+							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/creditcard.svg" loading="lazy">
 								<p class="payment-options-item__title">Credit cards <img class="pt-1 md:w-24 min-[992px]:w-[129px]" src="img/payment-options/creditcards.svg"></p>
 							</div>
-							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8" src="img/payment-options/zelle.svg">
+							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8" src="img/payment-options/zelle.svg" loading="lazy">
 								<p class="payment-options-item__title">Zelle</p>
 							</div>
 						</div>
 						<div class="payment-options__list flex flex-col gap-4 md:flex-row min-[992px]:gap-8">
-							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/venmo.svg">
+							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/venmo.svg" loading="lazy">
 								<p class="payment-options-item__title">Venmo</p>
 							</div>
-							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/checks.svg">
+							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/checks.svg" loading="lazy">
 								<p class="payment-options-item__title">Checks</p>
 							</div>
-							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/invoices.svg">
+							<div class="payment-options__item flex gap-2 items-center md:w-full"><img class="md:h-8 min-[992px]:h-12" src="img/payment-options/invoices.svg" loading="lazy">
 								<p class="payment-options-item__title">Invoices for regular clients</p>
 							</div>
 						</div>
@@ -1115,11 +1116,11 @@
 					</div>
 					<div class="contact-us__butons flex flex-col gap-4 md:flex-row max-w-[928px] md:w-full md:m-auto min-[992px]:gap-8">
 						<a href="tel:9199444446" class="contact-us__call-us text-white relative bgred rounded-lg flex gap-2 items-center justify-center px-4 py-2 font-semibold text-sm hover:bg-[#A73727] transition-colors duration-300 ease-in-out md:text-base md:w-full min-[992px]:text-2xl">
-							<img class="min-[992px]:h-10" src="img/header/phone.svg" alt="Phone" class="service-card__call-icon">
+							<img class="min-[992px]:h-10" src="img/header/phone.svg" alt="Phone" class="service-card__call-icon" loading="lazy">
 							Call Us: 919-944-4446
 						</a>
 						<a href="mailto:info@bestsubzerovikingservices.com" class="contact-us__email text-white relative bgred rounded-lg flex gap-2 items-center justify-center px-4 py-2 w-full font-semibold text-sm !leading-[100%] hover:bg-[#A73727] transition-colors duration-300 ease-in-out md:text-base min-[992px]:text-2xl">
-							<img class="min-[992px]:h-10" src="img/email.svg">
+							<img class="min-[992px]:h-10" src="img/email.svg" loading="lazy">
 							Send an email
 						</a>
 					</div>
@@ -1131,8 +1132,8 @@
 				<div class="md:flex md:flex-wrap md:justify-center md:gap-[30px_64px] min-[992px]:gap-10 min-[1200px]:gap-[120px] min-[992px]:flex-nowrap min-[1200px]:max-w-[1256px]">
 					<div class="footer__top min-[992px]:w-full">
 						<div class="footer__logo">
-							<img class="h-12 md:h-14 min-[992px]:h-20" src="img/header/header-logo.svg" alt="Best Sub Zero & Viking Service">
-							<button id="footer__to-top" class="footer__to-top absolute right-6 top-0" type="button" aria-label="Back to top"><img src="img/footer/strela.svg"></button>
+							<img class="h-12 md:h-14 min-[992px]:h-20" src="img/header/header-logo.svg" alt="Best Sub Zero & Viking Service" loading="lazy">
+							<button id="footer__to-top" class="footer__to-top absolute right-6 top-0" type="button" aria-label="Back to top"><img src="img/footer/strela.svg" loading="lazy"></button>
 						</div>
 						<p class="footer__description leading-[140%] text-white pt-6 text-base min-[992px]:text-sm">
 							Certified repair of luxury kitchen appliances. Same-day & next-day service across Raleigh and the Triangle Area.
@@ -1160,11 +1161,11 @@
 					<div class="footer__contacts text-white pt-8 md:pt-0 leading-[100%] text-base min-[992px]:text-sm min-[992px]:w-[110%] min-[1400px]:w-[328px]">
 						<h3 class="footer__contacts-title pb-6 text-sm md:text-base min-[992px]:text-xl">CONTACT</h3>
 						<a href="tel:9199444446" class="footer__phone flex gap-1 items-center md:gap-2">
-							<img class="h-4 md:h-6" src="img/footer/phone.svg">
+							<img class="h-4 md:h-6" src="img/footer/phone.svg" loading="lazy">
 							919-944-4446
 						</a>
 						<a href="mailto:info@bestsubzerovikingservices.com" class="footer__email flex gap-1 items-center pt-4 md:gap-2">
-							<img class="h-4 md:h-6" src="img/footer/email.svg">
+							<img class="h-4 md:h-6" src="img/footer/email.svg" loading="lazy">
 							info@bestsubzerovikingservices.com
 						</a>
 					</div>
@@ -1172,7 +1173,7 @@
 				<div class="md:flex md:items-center md:pt-10 md:justify-center md:gap-16 min-[992px]:justify-between">
 					<div class="footer__developer pt-10 md:pt-0 md:order-2">
 						<a href="https://webdelo.org" target="_blank" rel="nofollow noopener noreferrer" title="Website Development and Promotion WEBDELO">
-							<img src="img/footer/webdelo-logo.svg" alt="Webdelo Studio" class="footer__developer-logo">
+							<img src="img/footer/webdelo-logo.svg" alt="Webdelo Studio" class="footer__developer-logo" loading="lazy">
 						</a>
 						<p class="footer__developer-text leading-6 text-white pt-2 text-base min-[992px]:text-sm">Development and promotion</p>
 					</div>
@@ -1183,7 +1184,8 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250924133623" defer></script>
+	<script src="js/app.min.js?v=20250924&_v=20250924141135" defer></script>
+
 </body>
 
 </html>
