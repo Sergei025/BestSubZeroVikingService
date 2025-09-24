@@ -6724,7 +6724,8 @@ PERFORMANCE OF THIS SOFTWARE.
         document.addEventListener("DOMContentLoaded", (() => {
             if (window.innerWidth < 768) aos.init({
                 duration: 800,
-                once: true
+                once: true,
+                offset: 200
             });
         }));
         document.getElementById("footer__to-top").addEventListener("click", (() => {

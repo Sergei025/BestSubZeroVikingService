@@ -137,9 +137,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		AOS.init({
 			duration: 800,
 			once: true,
+			offset: 200, // увеличиваем, чтобы анимация запускалась позже
 		})
 	}
 })
+
 document.getElementById('footer__to-top').addEventListener('click', () => {
 	window.scrollTo({ top: 0, behavior: 'smooth' })
 })
