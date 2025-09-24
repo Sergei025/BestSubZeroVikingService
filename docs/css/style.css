@@ -340,6 +340,9 @@ video {
 .bottom-2 {
   bottom: .5rem
 }
+.left-0 {
+  left: 0
+}
 .left-1\/2 {
   left: 50%
 }
@@ -629,12 +632,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity,1))
-}
-.bg-cover {
-  background-size: cover
-}
-.bg-center {
-  background-position: center
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1003,9 +1000,6 @@ video {
 .header-call-button__icon.shake {
   -webkit-animation: shake .6s ease-in-out;
   animation: shake .6s ease-in-out
-}
-.hero {
-  background-image: url(../img/hero.gif)
 }
 .hero .hero__container .service .service__guarantee img {
   -webkit-filter: drop-shadow(0 0 17.9px #a87e46) drop-shadow(0 0 5.8px rgba(255, 255, 255, .2509803922));
