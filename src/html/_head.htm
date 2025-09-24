@@ -7,18 +7,49 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<!-- Подключить шрифты. Можно 1 раз загрузить через cnd google fonts а потом скопировать font face в pagespeed и вставить сюда -->
 	<style>
-		/* @font-face {
-			font-family: 'Jost';
-			font-style: normal;
-			font-weight: 300;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/jost/v19/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
-			unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		} */
+		/* Noto Sans 400 */
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('@scss/fonts/NotoSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Noto Sans 500 */
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('@scss/fonts/NotoSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Noto Sans 600 */
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('@scss/fonts/NotoSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Noto Sans 700 */
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('@scss/fonts/NotoSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Noto Sans 900 */
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../NotoSans-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
 	</style>
 	<!-- Дефолтные стили -->
 	<style>
