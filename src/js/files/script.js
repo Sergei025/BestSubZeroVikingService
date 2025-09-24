@@ -135,12 +135,20 @@ import 'aos/dist/aos.css'
 document.addEventListener('DOMContentLoaded', () => {
 	if (window.innerWidth < 768) {
 		AOS.init({
-			duration: 800,
-			once: true,
-			offset: 200, // увеличиваем, чтобы анимация запускалась позже
+			duration: 800, // время анимации
+			once: true, // проигрывать анимацию только один раз
+			offset: 200, // с какой дистанции до элемента запускать
+			easing: 'ease-in-out', // плавное появление
+		})
+
+		// Задаём задержку для каждого шага, чтобы появлялись последовательно
+		const steps = document.querySelectorAll('[data-aos="fade-up"]')
+		steps.forEach((step, index) => {
+			step.setAttribute('data-aos-delay', index * 150) // 150ms разница между шагами
 		})
 	}
 })
+
 
 document.getElementById('footer__to-top').addEventListener('click', () => {
 	window.scrollTo({ top: 0, behavior: 'smooth' })

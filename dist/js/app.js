@@ -6722,11 +6722,18 @@ PERFORMANCE OF THIS SOFTWARE.
             }));
         }));
         document.addEventListener("DOMContentLoaded", (() => {
-            if (window.innerWidth < 768) aos.init({
-                duration: 800,
-                once: true,
-                offset: 200
-            });
+            if (window.innerWidth < 768) {
+                aos.init({
+                    duration: 800,
+                    once: true,
+                    offset: 200,
+                    easing: "ease-in-out"
+                });
+                const steps = document.querySelectorAll('[data-aos="fade-up"]');
+                steps.forEach(((step, index) => {
+                    step.setAttribute("data-aos-delay", index * 150);
+                }));
+            }
         }));
         document.getElementById("footer__to-top").addEventListener("click", (() => {
             window.scrollTo({
