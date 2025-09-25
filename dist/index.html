@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 
@@ -12,6 +11,22 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" href="img/premium.svg" as="image" type="image/svg+xml" fetchpriority="high">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title" content="Best Sub-Zero & Viking Appliance Repair in Raleigh | Certified Service">
+	<meta property="og:description" content="Certified Sub-Zero & Viking repair in Raleigh, Cary, Durham & Chapel Hill. Same-day service, OEM parts, 180-day guarantee. Book expert repair today!">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="img/logo.webp">
+	<meta property="og:image:alt" content="Company Logo">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Best Sub-Zero & Viking Appliance Repair in Raleigh | Certified Service">
+	<meta name="twitter:description" content="Certified Sub-Zero & Viking repair in Raleigh, Cary, Durham & Chapel Hill. Same-day service, OEM parts, 180-day guarantee. Book expert repair today!">
+	<meta name="twitter:image" content="img/logo.webp">
+	<meta name="twitter:image:alt" content="Company Logo">
 	<!-- Подключить шрифты. Можно 1 раз загрузить через cnd google fonts а потом скопировать font face в pagespeed и вставить сюда -->
 	<style>
 		/* latin */
@@ -98,8 +113,8 @@
 	<style>
 	</style>
 
-	<link rel="preload" href="css/style.min.css?v=20250924&_v=20250925000048" as="style" onload="this.rel='stylesheet'">
-	<link rel="stylesheet" href="css/style.min.css?v=20250924&_v=20250925000048" />
+	<link rel="preload" href="css/style.min.css?v=20250924&_v=20250925102922" as="style" onload="this.rel='stylesheet'">
+	<link rel="stylesheet" href="css/style.min.css?v=20250924&_v=20250925102922">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -120,7 +135,7 @@
 			<div class="header__menu md:mx-4 md:mt-4">
 				<div class="header__content bgred flex items-center justify-between max-w-[1408px] md:rounded-lg py-2 px-6 m-auto">
 					<a href="" class="header__logo z-[5]">
-						<img alt="Best Sub-Zero & Viking Service Logo" class="h-10 md:h-full" src="img/header/header-logo.svg" alt="">
+						<img alt="Best Sub-Zero & Viking Service Logo" class="h-10 md:h-full" src="img/header/header-logo.svg">
 					</a>
 					<div class="menu md:!pt-[103px] min-[1301px]:!pt-0 h-full md:h-auto">
 						<nav class="menu__body md:text-lg min-[1301px]:text-base overflow-auto h-full md:h-auto">
@@ -159,9 +174,9 @@
 		<main class="page relative">
 			<section class="hero relative flex flex-col gap-16 !pt-28 !pb-20 md:mt-[-64px] md:!pt-60 min-[992px]:pb-[196px]">
 				<div class="hero__container min-[992px]:!max-w-full">
-					<video alt="Animation of a technician repairing a refrigerator in the kitchen" aria-label="Animation of a technician repairing a refrigerator in the kitchen" class="object-center top-0 left-0 w-full h-full object-cover absolute" autoplay muted loop playsinline preload="metadata">
+					<video aria-label="Animation of a technician repairing a refrigerator in the kitchen" class="object-center top-0 left-0 w-full h-full object-cover absolute" autoplay muted loop playsinline preload="metadata">
 						<source src="img/hero.webm?v=1" type="video/webm">
-						<track kind="captions" src="" srclang="en" label="English">
+						<track kind="captions" src="img/captions-en.vtt" srclang="en" label="English">
 					</video>
 					<div class="absolute inset-0 bg-[#111111D9]"></div>
 					<div class="service flex flex-col gap-4 relative pb-16 min-[992px]:gap-8 min-[992px]:pb-32">
@@ -189,7 +204,7 @@
 									<img src="img/worker-icon.svg" alt="Technician" class="min-[992px]:m-auto h-8 min-[992px]:h-12">
 									<p class="service-cardavailability-info__text text-white text-center !leading-[142%] md:text-sm min-[992px]:text-2xl">
 										Live availability:<br>
-										<img id="loader" width="33px" height="33px" srcset="img/circle-loader-mobile.gif 33w,img/circle-loader.gif 475w" sizes="(max-width: 992) 33px, 475px" class="w-5 h-5 m-auto min-[992px]:w-[33px] min-[992px]:h-[33px]" src="img/circle-loader.gif" alt="Loading...">
+										<img id="loader" width="33" height="33" srcset="img/circle-loader-mobile.gif 33w,img/circle-loader.gif 475w" sizes="(max-width: 992px) 33px, 475px" class="w-5 h-5 m-auto min-[992px]:w-[33px] min-[992px]:h-[33px]" src="img/circle-loader.gif" alt="Loading...">
 										<span id="content" class="service-cardavailability__info__count hidden text-center">—</span>
 									</p>
 								</div>
@@ -208,6 +223,7 @@
 			</section>
 			<section class="benefits bgred">
 				<div class="benefits__container flex flex-col gap-4 !py-6 md:flex-row min-[992px]:!py-8">
+					<h2 class="hidden">Our Benefits</h2>
 					<div class="benefits__item flex px-4 py-3 gap-4 bg-white rounded-lg items-center md:w-full min-[992px]:p-6">
 						<img alt="repair" src="img/repair.svg" class="min-[992px]:h-12" loading="lazy">
 						<div class="benefits__text font-semibold !leading-[120%] pr-12 md:pr-0 min-[992px]:text-[28px]">
@@ -348,7 +364,7 @@
 					<p class="services__note text-sm text-[#777777] !leading-[140%] pt-6 md:max-w-[300px] md:text-base min-[850px]:max-w-[370px] min-[950px]:max-w-[475px] min-[992px]:text-xl min-[992px]:max-w-[425px] min-[992px]:pt-16 min-[1170px]:max-w-[626px] min-[1340px]:max-w-[766px]">
 						While we do not service budget refrigerators, we can still repair ranges, stoves, cooktops, and ovens from most brands — including Samsung, LG, GE, and others.
 					</p>
-					<img alt="Ammeter" src="img/bg-image1.webp" srcset="img/bg-image1-271.webp 271w, img/bg-image1-411.webp 411w, img/bg-image1.webp 582w" sizes="(max-width: 320px) 271w, (max-width: 475px) 411px, 582px" class="mb-[-11%] md:absolute md:right-4 md:bottom-0 md:h-[350px] md:mb-[-120px] min-[992px]:h-[441px] min-[992px]:mb-[-167px]" loading="lazy">
+					<img alt="Ammeter" src="img/bg-image1.webp" srcset="img/bg-image1-271.webp 271w, img/bg-image1-411.webp 411w, img/bg-image1.webp 582w" sizes="(max-width: 320px) 271px, (max-width: 475px) 411px, 582px" class="mb-[-11%] md:absolute md:right-4 md:bottom-0 md:h-[350px] md:mb-[-120px] min-[992px]:h-[441px] min-[992px]:mb-[-167px]" loading="lazy">
 				</div>
 			</section>
 			<section data-watch="navigator" class="location-selector bg-[#E9E9E9] py-16 min-[992px]:py-24">
@@ -435,7 +451,7 @@
 							</div>
 						</div>
 						<div class="location-selector__map md:w-1/2">
-							<a class="w-full block" href="https://www.google.com/maps/search/?api=1&query=Morrisville, NC" target="_blank">
+							<a class="w-full block" href="https://www.google.com/maps/search/?api=1&query=Morrisville,+NC" target="_blank">
 								<img id="location-map" class="rounded-lg w-full" src="img/location-maps/Morrisville.webp" alt="Morrisville, NC" loading="lazy">
 							</a>
 						</div>
@@ -497,7 +513,7 @@
 								Professional service
 							</div>
 							<div class="why-choose__text text-sm !leading-[140%] min-[992px]:text-xl">
-								We treat your home with respect and leave it spotless.We focus on quality and reliability, not just the number of calls.
+								We treat your home with respect and leave it spotless. We focus on quality and reliability, not just the number of calls.
 							</div>
 						</div>
 					</div>
@@ -517,7 +533,7 @@
 								For precise diagnostics,<br> we are equipped with:
 							</p>
 							<ul class="parts-info__list text-sm !leading-[140%] text-[#181818] pl-5 flex flex-col gap-2 md:text-base min-[992px]:text-xl min-[992px]:gap-6">
-								<li class="service-info__item list-disc marker:text-lg marker:text-[#EA4A35] !leading-[100%] h-4">Eléctronic leak detectors</li>
+								<li class="service-info__item list-disc marker:text-lg marker:text-[#EA4A35] !leading-[100%] h-4">Electronic leak detectors</li>
 								<li class="service-info__item list-disc marker:text-lg marker:text-[#EA4A35] !leading-[100%] h-4">Vacuum pumps &amp; gauges</li>
 								<li class="service-info__item list-disc marker:text-lg marker:text-[#EA4A35] !leading-[100%] h-4">Genuine Sub-Zero &amp; Wolf service tools</li>
 							</ul>
@@ -677,6 +693,25 @@
 									<div class="portfolio-img__wrapper swiper-wrapper">
 										<!-- Слайд -->
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
+											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide5/photo1.webp" alt="Refrigerator" loading="lazy">
+										</div>
+									</div>
+									<!-- Якщо потрібна пагінація -->
+									<div class="swiper-pagination absolute bottom-2 flex gap-2 left-1/2 -translate-x-1/2"></div>
+								</div>
+								<div class="portfolio-slide-info">
+									<h2 class="portfolio-slide-info__title font-semibold text-lg !leading-[120%] md:text-xl min-[992px]:text-2xl">Viking Refrigerator</h2>
+									<p class="portfolio-slide-info__description text-sm !leading-[120%] text-[#777777] md:text-base min-[992px]:text-xl">All computer boards replacement after power surge</p>
+								</div>
+								<p class="portfolio-slide__text text-sm !leading-[140%] md:text-base min-[992px]:text-xl">Replaced all damaged computer boards after a power surge, reprogrammed the controls, and tested the cooling and defrost systems to factory standards.</p>
+							</div>
+							<div class="portfolio__slide swiper-slide p-4 bg-[#FDFDFD] rounded-lg flex flex-col gap-4 min-[992px]:p-6">
+								<!-- Оболонка слайдера -->
+								<div class="portfolio-img__slider swiper relative" data-gallery>
+									<!-- Частина слайдера, що рухається -->
+									<div class="portfolio-img__wrapper swiper-wrapper">
+										<!-- Слайд -->
+										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
 											<img class="w-full h-full object-cover object-center" src="img/portfolio-slider/slide1/photo1.webp" alt="Refrigerator" loading="lazy">
 										</div>
 										<div class="portfolio-img__slide swiper-slide h-80 overflow-hidden rounded w-full md:h-[432px] min-[992px]:h-[533px]">
@@ -697,9 +732,9 @@
 								</div>
 								<div class="portfolio-slide-info">
 									<h2 class="portfolio-slide-info__title font-semibold text-lg !leading-[120%] md:text-xl min-[992px]:text-2xl">Viking Refrigerator</h2>
-									<p class="portfolio-slide-info__description text-sm !leading-[120%] text-[#777777] md:text-base min-[992px]:text-xl">All computer boards replacement after power surge</p>
+									<p class="portfolio-slide-info__description text-sm !leading-[120%] text-[#777777] md:text-base min-[992px]:text-xl">Repair</p>
 								</div>
-								<p class="portfolio-slide__text text-sm !leading-[140%] md:text-base min-[992px]:text-xl">Replaced all damaged computer boards after a power surge, reprogrammed the controls, and tested the cooling and defrost systems to factory standards.</p>
+								<p class="portfolio-slide__text text-sm !leading-[140%] md:text-base min-[992px]:text-xl">Replaced faulty cooling components, installed OEM parts, and recalibrated the system to restore full cooling performance. </p>
 							</div>
 							<div class="portfolio__slide swiper-slide p-4 bg-[#FDFDFD] rounded-lg flex flex-col gap-4 min-[992px]:p-6">
 								<!-- Оболонка слайдера -->
@@ -896,7 +931,7 @@
 					</div>
 					<div class="contact-us__butons flex flex-col gap-4 md:flex-row max-w-[928px] md:w-full md:m-auto min-[992px]:gap-8">
 						<a href="tel:9199444446" class="contact-us__call-us text-white relative bgred rounded-lg flex gap-2 items-center justify-center px-4 py-2 font-semibold text-sm hover:bg-[#A73727] transition-colors duration-300 ease-in-out md:text-base md:w-full min-[992px]:text-2xl">
-							<img class="min-[992px]:h-10" src="img/header/phone.svg" alt="Phone" class="service-card__call-icon" loading="lazy">
+							<img class="service-card__call-icon min-[992px]:h-10" src="img/header/phone.svg" alt="Phone" loading="lazy">
 							Call Us: 919-944-4446
 						</a>
 						<a href="mailto:info@bestsubzerovikingservices.com" class="contact-us__email text-white relative bgred rounded-lg flex gap-2 items-center justify-center px-4 py-2 w-full font-semibold text-sm !leading-[100%] hover:bg-[#A73727] transition-colors duration-300 ease-in-out md:text-base min-[992px]:text-2xl">
@@ -964,7 +999,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?v=20250924&_v=20250925000048" defer></script>
+	<script src="js/app.min.js?v=20250924&_v=20250925102922" defer></script>
 
 </body>
 
